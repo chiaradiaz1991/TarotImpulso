@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+}
+
+.contenedor-principal{
+	padding: 10px;
+}
+
+.detalle2{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+
+}
+
+.imagen2{
+	width: 450px;
+	height: auto;
+	margin: 20px;
+}
+
+.precio2{
+	margin: 20px;
+	color: black;
+	font-size: 40px;
+
+}
+
+.comprar-boton{
+	width: 150px;
+	height: 40px;
+}
+
+.descripcion-container{
+	margin:30px;
+	width: 550px;
+}
+
+.texto{
+	margin: 10px;
+}
+
+.comprar-boton{
+	background-color: #3483FA;
+	color: white;
+	font-size: 14px;
+}
+
+.descripcion{
+	font-size: 12px;
+
+}
+
+.texto-descripcion{
+	font-size: 18px;
+
+}

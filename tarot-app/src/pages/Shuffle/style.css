@@ -1,0 +1,25 @@
+
+.main-container {
+}
+
+.container {
+  width: 80vw;
+}
+
+.list {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-back {
+  width: 100px;
+  height: auto;
+}
+
+.holadiv {
+  background-color: pink;
+  width: 400px;
+  height: 400px;
+}
