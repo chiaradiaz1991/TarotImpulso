@@ -1,25 +1,60 @@
 
-.main-container {
+.mainContainerFront {
+  /* display: flex;
+  flex-direction: row; */
 }
 
-.container {
-  width: 80vw;
-}
-
-.list {
-  width: 80vw;
+.mainContainerBack {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
 }
 
-.image-back {
-  width: 100px;
-  height: auto;
+.cardsContainer {
+  display: flex;
 }
 
-.holadiv {
+.buttonActive {
+  color: green;
+  background-color: green;
+}
+
+.buttonInactive {
+  /* position: absolute;
+  width: 147px;
+  height: 34px;
+  left: 494.35px;
+  top: 467.63px;
+  background: #818181;
+  border-radius: 6px; */
+  display: none;
+}
+
+
+.backSideContainer {
+  width: 80%;
+}
+
+.card {
+  width: 221px;
+  height: 321px;
+  left: 180.63px;
+  top: 234.6px;
+  margin: 26px
+
+}
+
+#one{
+  transform: rotate(-6.07deg);
+}
+
+#two {
+  transform: rotate(2.48deg);
+}
+
+#three {
+  transform: rotate(-1.96deg);
+}
+
+.cardSelectedContainer {
   background-color: pink;
-  width: 400px;
-  height: 400px;
 }

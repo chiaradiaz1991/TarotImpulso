@@ -1,5 +1,6 @@
-import React, { Component, useState } from 'react';
-import './style.css';
+import React from 'react';
+// import style from "./style.css";
+import '../Shuffle/style.css';
 import image1 from '../../assets/image01.jpg';
 import image2 from '../../assets/image02.jpg';
 import image3 from '../../assets/image03.jpg';
@@ -22,13 +23,12 @@ import Card from '../../Components/Card/Card';
 class Shuffle extends React.Component {
   constructor(props) {
     super(props)
-
-    this.backCards = [backImage, backImage, backImage]
     this.cards = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13];
 
     this.state = {
       cards: this.cards,
       active: false,
+      card: '',
     }
   }
 
@@ -39,21 +39,43 @@ class Shuffle extends React.Component {
   }
 
   handleSuffle() {
+    console.log('ESTOY EN Card.JS')
     let desordenadas = this.state.cards.sort(function () {
       return Math.random() - 0.5
     });
 
     this.setState({
       cards: desordenadas,
-      active: !this.state.active,
+      active: false,
     });
+  }
 
+  cardName(number) {
+    let selectedCard;
+    switch (number) {
+      case 0:
+        selectedCard = this.state.cards[0];
+        break;
+      case 1:
+        selectedCard = this.state.cards[1];
+        break;
+      case 2:
+        selectedCard = this.state.cards[2];
+        break;
+      default:
+        selectedCard = this.state.cards[0];
+        break;
+    }
+
+    this.setState({
+      card: selectedCard,
+      active: true,
+    });
   }
 
 
   componentDidMount() {
     this.handleSuffle();
-
   }
 
 
@@ -61,36 +83,40 @@ class Shuffle extends React.Component {
 
 
   render() {
-    const { cards, active } = this.state;
-    console.log(cards, active, 'DESP DEL RENDER')
+    const { cards, active, card } = this.state;
+
     return (
-      <div>
-        <div>HOLA SHUFFLE PAGE!</div>
-        {cards.map((item, i) => {
-          if (i < 3) {
-            return (
-              <>
-                {/* <Card
-                  key={i}
-                  active={active}
-                  image={item}
-                /> */}
-                <img src={item} />
-              </>
+      // <div className="mainContainer">
+      <div className={active ? 'mainContainerFront' : 'mainContainerBack' }>
+        <div className="cardsContainer">
+        {
+          active === false && (
+            <div className="backSideContainer">
+              <img className="card" id="one" src={backImage} onClick={() => this.cardName(0)} />
+              <img className="card" id="two" src={backImage} onClick={() => this.cardName(1)} />
+              <img className="card" id="three" src={backImage} onClick={() => this.cardName(2)} />
+            </div>
+          )
+        }
+        <div className="cardSelectedContainer">
+          {
+            active === true && (
+              <Card
+                cards={cards}
+                card={card}
+                active={active}
+              />
             )
           }
-        })}
-        <button onClick={() => this.handleSuffle()}>
+        </div>
+        </div>
+        <button className={ active ? 'buttonActive' : 'buttonInactive' } onClick={() => this.handleSuffle()}>
           Click me
       </button>
-      </div>
+      </div >
     )
   }
 }
-
-
-//poner en un component la accion de mostrar o no el reverso y la logica va  a acá 
-// no usar hooks, en el componentDidMount actualizar el state del array de cartas que estoy usando
 
 
 export default Shuffle;

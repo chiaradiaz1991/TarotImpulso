@@ -1,0 +1,15 @@
+
+.mainContainer{
+  /* width: 80%; */
+  background-color: rebeccapurple;
+}
+
+.cardSelected {
+  position: absolute;
+  width: 250px;
+  height: 364px;
+  left: 60px;
+  top: 198.65px;
+  transform: rotate(-5.03deg);
+  background-color: plum;
+}
