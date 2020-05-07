@@ -1,15 +1,38 @@
 
-.mainContainer{
-  /* width: 80%; */
-  background-color: rebeccapurple;
+.mainContainerCard{
+  display: flex;
 }
 
 .cardSelected {
-  position: absolute;
+  /* position: absolute; */
   width: 250px;
   height: 364px;
   left: 60px;
   top: 198.65px;
   transform: rotate(-5.03deg);
-  background-color: plum;
+}
+
+.cardContainer {
+  width: 70%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  width: 40%;
+  text-align: center;
+  top: 30%;
+  right: 10%;
+}
+
+@media screen and (max-width: 475px) {
+
+  /* .mainContainer {
+    display: flex;
+  }
+  .textContainer {
+    background-color: pink;
+    position: none;
+  } */
 }

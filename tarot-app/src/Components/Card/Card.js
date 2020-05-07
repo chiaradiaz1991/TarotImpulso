@@ -1,15 +1,20 @@
 
 import React from 'react';
-import '../Card/styles.css';
+import './styles.css';
 
 
 
 class Card extends React.Component {
   render() {
     return (
-      <div className="mainContainer">
-        <img className="cardSelected" src={this.props.card} />
-
+      <div className="mainContainerCard">
+        <div className="cardContainer">
+          <img className="cardSelected" src={this.props.card} />
+        </div>
+        <div className="textContainer">
+          <h1>{this.props.text.title}</h1>
+          <p>{this.props.text.description}</p>
+        </div>
       </div>
     )
   }

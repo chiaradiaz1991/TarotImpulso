@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 
 
-class DetailCard extends Component {
+class AboutMe extends Component {
   constructor(props) {
     super(props)
   }
@@ -10,7 +10,7 @@ class DetailCard extends Component {
   render() {
     return (
       <div>
-          <div>HOLA DETAIL CARD PAGE!</div>
+          <p>about me page</p>
       </div>
     )
   }
@@ -18,4 +18,4 @@ class DetailCard extends Component {
 
 
 
-export default DetailCard;
+export default AboutMe;

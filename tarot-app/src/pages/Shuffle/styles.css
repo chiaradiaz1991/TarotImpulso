@@ -10,22 +10,21 @@
 }
 
 .cardsContainer {
-  display: flex;
+  /* display: flex; */
 }
 
 .buttonActive {
-  color: green;
-  background-color: green;
+  /* position: absolute; */
+  width: 147px;
+  height: 34px;
+  /* left: 494.35px;
+  top: 467.63px; */
+  background: #818181;
+  border-radius: 6px;
+  margin: auto;
 }
 
 .buttonInactive {
-  /* position: absolute;
-  width: 147px;
-  height: 34px;
-  left: 494.35px;
-  top: 467.63px;
-  background: #818181;
-  border-radius: 6px; */
   display: none;
 }
 
@@ -56,5 +55,5 @@
 }
 
 .cardSelectedContainer {
-  background-color: pink;
+  padding: 0% 8% 5% 8%;
 }

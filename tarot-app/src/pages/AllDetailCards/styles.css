@@ -1,7 +1,10 @@
-body{
-	margin: 0;
-}
 
+
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+}
 .contenedor-principal{
 	padding: 10px;
 }
@@ -54,4 +57,23 @@ body{
 .texto-descripcion{
 	font-size: 18px;
 
+}
+
+.buttonContainer {
+	display: flex;
+}
+
+.par {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.impar {
+	display: flex;
+}
+
+.textContainer {
+	display: flex;
+	justify-content: center;
+	margin: 5%;
 }

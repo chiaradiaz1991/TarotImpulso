@@ -1,6 +1,6 @@
 import React from 'react';
 // import style from "./style.css";
-import '../Shuffle/style.css';
+import './styles.css';
 import image1 from '../../assets/image01.jpg';
 import image2 from '../../assets/image02.jpg';
 import image3 from '../../assets/image03.jpg';
@@ -16,6 +16,7 @@ import image12 from '../../assets/image12.jpg';
 import image13 from '../../assets/image13.jpg';
 import backImage from '../../assets/back.png';
 import Card from '../../Components/Card/Card';
+import data from '../../data';
 
 
 
@@ -23,12 +24,13 @@ import Card from '../../Components/Card/Card';
 class Shuffle extends React.Component {
   constructor(props) {
     super(props)
-    this.cards = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13];
+    this.cards = [image1, image2, image3, image4, image5, image6];
 
     this.state = {
       cards: this.cards,
       active: false,
       card: '',
+      description: {},
     }
   }
 
@@ -39,10 +41,12 @@ class Shuffle extends React.Component {
   }
 
   handleSuffle() {
-    console.log('ESTOY EN Card.JS')
     let desordenadas = this.state.cards.sort(function () {
       return Math.random() - 0.5
     });
+
+    console.log(desordenadas, 'DESORDENADAS');
+
 
     this.setState({
       cards: desordenadas,
@@ -52,26 +56,74 @@ class Shuffle extends React.Component {
 
   cardName(number) {
     let selectedCard;
+    let text;
     switch (number) {
       case 0:
         selectedCard = this.state.cards[0];
+        text= this.description(selectedCard);
         break;
       case 1:
         selectedCard = this.state.cards[1];
+        text= this.description(selectedCard);
         break;
       case 2:
         selectedCard = this.state.cards[2];
+        text= this.description(selectedCard);
         break;
       default:
         selectedCard = this.state.cards[0];
+        text= this.description(selectedCard);
         break;
     }
+
+    
 
     this.setState({
       card: selectedCard,
       active: true,
+      description: text,
     });
+
   }
+
+  description(card) {
+    let descriptionCard={
+      title: '',
+      description: '',
+    };
+    switch(card) {
+      case image1:
+        descriptionCard.title = "hola soy la carta 1";
+        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
+      break;
+      case image2:
+        descriptionCard.title = "hola soy la carta 1";
+        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
+      break;
+      case image3:
+        descriptionCard.title = "hola soy la carta 2";
+        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
+      break;
+      case image4:
+        descriptionCard.title = "hola soy la carta 3";
+        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
+      break;
+      case image5:
+        descriptionCard.title = "hola soy la carta 4";
+        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
+      break;
+      case image6:
+        descriptionCard.title = "hola soy la carta 5";
+        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
+      break;
+      default:
+        descriptionCard="nada";
+        break;
+    }
+    console.log('HOLIS---> ', descriptionCard)
+    return descriptionCard;
+  }
+
 
 
   componentDidMount() {
@@ -83,11 +135,10 @@ class Shuffle extends React.Component {
 
 
   render() {
-    const { cards, active, card } = this.state;
-
+    const { cards, active, card, description } = this.state;
     return (
-      // <div className="mainContainer">
-      <div className={active ? 'mainContainerFront' : 'mainContainerBack' }>
+      <div className="mainContainer">
+        <p>Elegí tu carta del día</p>
         <div className="cardsContainer">
         {
           active === false && (
@@ -105,6 +156,7 @@ class Shuffle extends React.Component {
                 cards={cards}
                 card={card}
                 active={active}
+                text={description}
               />
             )
           }

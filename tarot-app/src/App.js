@@ -4,7 +4,7 @@ import './App.css';
 import AllDetailCards from './pages/AllDetailCards/AllDetailCards';
 import HomePage from './pages/HomePage/HomePage';
 import Shuffle from './pages/Shuffle/Shuffle';
-import DetailCard from './pages/DetailCard/DetailCard';
+import DetailCard from './pages/AboutMe/AboutMe';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,7 +28,7 @@ class App extends Component {
                 <Link to="/all-cards">All Cards</Link>
               </li>
               <li>
-                <Link to="/detail-card">Detail Card</Link>
+                <Link to="/about-me">About Me</Link>
               </li>
               {/* <li>
                 <Link to="/shuffle">Shuffle!</Link>
@@ -41,7 +41,7 @@ class App extends Component {
               <Route path="/all-cards">
                 <AllDetailCards />
               </Route>
-              <Route path="/detail-card">
+              <Route path="/about-me">
                 <DetailCard />
               </Route>
               <Route path="/shuffle">
