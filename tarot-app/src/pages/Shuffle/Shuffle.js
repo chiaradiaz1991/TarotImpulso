@@ -14,6 +14,15 @@ import image10 from '../../assets/image10.jpg';
 import image11 from '../../assets/image11.jpg';
 import image12 from '../../assets/image12.jpg';
 import image13 from '../../assets/image13.jpg';
+import image14 from '../../assets/image13.jpg';
+import image15 from '../../assets/image13.jpg';
+import image16 from '../../assets/image13.jpg';
+import image17 from '../../assets/image13.jpg';
+import image18 from '../../assets/image13.jpg';
+import image19 from '../../assets/image13.jpg';
+import image20 from '../../assets/image13.jpg';
+import image21 from '../../assets/image13.jpg';
+import image22 from '../../assets/image13.jpg';
 import backImage from '../../assets/back.png';
 import Card from '../../Components/Card/Card';
 import data from '../../data';
@@ -60,23 +69,23 @@ class Shuffle extends React.Component {
     switch (number) {
       case 0:
         selectedCard = this.state.cards[0];
-        text= this.description(selectedCard);
+        text = this.description(selectedCard);
         break;
       case 1:
         selectedCard = this.state.cards[1];
-        text= this.description(selectedCard);
+        text = this.description(selectedCard);
         break;
       case 2:
         selectedCard = this.state.cards[2];
-        text= this.description(selectedCard);
+        text = this.description(selectedCard);
         break;
       default:
         selectedCard = this.state.cards[0];
-        text= this.description(selectedCard);
+        text = this.description(selectedCard);
         break;
     }
 
-    
+
 
     this.setState({
       card: selectedCard,
@@ -87,37 +96,189 @@ class Shuffle extends React.Component {
   }
 
   description(card) {
-    let descriptionCard={
+    let descriptionCard = {
       title: '',
       description: '',
     };
-    switch(card) {
+    switch (card) {
       case image1:
-        descriptionCard.title = "hola soy la carta 1";
-        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
-      break;
+        data.map((item, i) => {
+          if (item.id === 1) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
       case image2:
-        descriptionCard.title = "hola soy la carta 1";
-        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
-      break;
+        data.map((item, i) => {
+          if (item.id === 2) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
       case image3:
-        descriptionCard.title = "hola soy la carta 2";
-        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
-      break;
+        data.map((item, i) => {
+          if (item.id === 3) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
       case image4:
-        descriptionCard.title = "hola soy la carta 3";
-        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
-      break;
+        data.map((item, i) => {
+          if (item.id === 4) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
       case image5:
-        descriptionCard.title = "hola soy la carta 4";
-        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
-      break;
+        data.map((item, i) => {
+          if (item.id === 5) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
       case image6:
-        descriptionCard.title = "hola soy la carta 5";
-        descriptionCard.description= "el mago Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere.";
-      break;
+        data.map((item, i) => {
+          if (item.id === 6) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image7:
+        data.map((item, i) => {
+          if (item.id === 7) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image8:
+        data.map((item, i) => {
+          if (item.id === 8) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image9:
+        data.map((item, i) => {
+          if (item.id === 9) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image10:
+        data.map((item, i) => {
+          if (item.id === 10) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image11:
+        data.map((item, i) => {
+          if (item.id === 11) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image12:
+        data.map((item, i) => {
+          if (item.id === 12) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image13:
+        data.map((item, i) => {
+          if (item.id === 13) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image14:
+        data.map((item, i) => {
+          if (item.id === 14) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image15:
+        data.map((item, i) => {
+          if (item.id === 15) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image16:
+        data.map((item, i) => {
+          if (item.id === 16) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image17:
+        data.map((item, i) => {
+          if (item.id === 17) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image18:
+        data.map((item, i) => {
+          if (item.id === 18) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image19:
+        data.map((item, i) => {
+          if (item.id === 19) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image20:
+        data.map((item, i) => {
+          if (item.id === 20) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image21:
+        data.map((item, i) => {
+          if (item.id === 21) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
+      case image22:
+        data.map((item, i) => {
+          if (item.id === 22) {
+            descriptionCard.title = item.title;
+            descriptionCard.description = item.description;
+          }
+        });
+        break;
       default:
-        descriptionCard="nada";
+        descriptionCard = '';
         break;
     }
     console.log('HOLIS---> ', descriptionCard)
@@ -138,32 +299,34 @@ class Shuffle extends React.Component {
     const { cards, active, card, description } = this.state;
     return (
       <div className="mainContainer">
-        <p>Elegí tu carta del día</p>
+        <div className="containerTitle">
+          <p className="pickACard">Elegí tu carta del día</p>
+        </div>
         <div className="cardsContainer">
-        {
-          active === false && (
-            <div className="backSideContainer">
-              <img className="card" id="one" src={backImage} onClick={() => this.cardName(0)} />
-              <img className="card" id="two" src={backImage} onClick={() => this.cardName(1)} />
-              <img className="card" id="three" src={backImage} onClick={() => this.cardName(2)} />
-            </div>
-          )
-        }
-        <div className="cardSelectedContainer">
           {
-            active === true && (
-              <Card
-                cards={cards}
-                card={card}
-                active={active}
-                text={description}
-              />
+            active === false && (
+              <div className="backSideContainer">
+                <img className="card" id="one" src={backImage} onClick={() => this.cardName(0)} />
+                <img className="card" id="two" src={backImage} onClick={() => this.cardName(1)} />
+                <img className="card" id="three" src={backImage} onClick={() => this.cardName(2)} />
+              </div>
             )
           }
+          <div className="cardSelectedContainer">
+            {
+              active === true && (
+                <Card
+                  cards={cards}
+                  card={card}
+                  active={active}
+                  text={description}
+                />
+              )
+            }
+          </div>
         </div>
-        </div>
-        <button className={ active ? 'buttonActive' : 'buttonInactive' } onClick={() => this.handleSuffle()}>
-          Click me
+        <button className={active ? 'buttonActive' : 'buttonInactive'} onClick={() => this.handleSuffle()}>
+          Tirá otra
       </button>
       </div >
     )

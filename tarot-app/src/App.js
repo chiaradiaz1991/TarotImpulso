@@ -11,7 +11,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-// import images from './assets/1.jpg  ';
 
 
 class App extends Component {
@@ -21,18 +20,15 @@ class App extends Component {
         <Router>
           <div className="list-container">
             <ul>
-              <li>
-                <Link to="/">Home</Link>
+              <li classNAme="links" >
+                <Link to="/" className="navMenuLinks">Home</Link>
               </li>
-              <li>
-                <Link to="/all-cards">All Cards</Link>
+              <li classNAme="links" >
+                <Link to="/all-cards" className="navMenuLinks">Cartas</Link>
               </li>
-              <li>
-                <Link to="/about-me">About Me</Link>
+              <li classNAme="links" >
+                <Link to="/about-me" className="navMenuLinks">Sobre Mí</Link>
               </li>
-              {/* <li>
-                <Link to="/shuffle">Shuffle!</Link>
-              </li> */}
             </ul>
             <Switch>
               <Route exact path="/">
@@ -50,6 +46,10 @@ class App extends Component {
             </Switch>
           </div>
         </Router>
+        <div className="footer">
+          <p className="footerUs">Esta página fue desarrollada con 💖por <a href="https://www.github.com/chiaradiaz1991" target="_blank" className="footerUsA"> Chiara Diaz</a></p>
+          <p className="footerUs">Esta página fue diseñada con 💖por <a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA"> Deandra Delgado</a></p>
+        </div>
       </div>
     );
   }

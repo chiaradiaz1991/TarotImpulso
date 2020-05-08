@@ -3,8 +3,8 @@ import './styles.css';
 
 
 const Button = (props) => (
-    <div className="buttonContainer">
-      <button><a href={`#${props.id}`}>{props.info.title}</a></button>
+    <div className="buttonMainContainer">
+      <button className="cardButton"><a href={`#${props.id}`}>{props.info.title}</a></button>
     </div>
   );
 

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Jost', sans-serif; */
+  /* font-family: 'Milonga', cursive; */
 
 
 .mainContainer {
@@ -5,62 +12,12 @@
 	flex-direction: column;
 	margin: 5%;
 }
-.contenedor-principal{
-	padding: 10px;
-}
 
-.detalle2{
+.buttonCardsContainer {
 	display: flex;
-	justify-content: center;
-	margin: 10px;
-
-}
-
-.imagen2{
-	width: 450px;
-	height: auto;
-	margin: 20px;
-}
-
-.precio2{
-	margin: 20px;
-	color: black;
-	font-size: 40px;
-
-}
-
-.comprar-boton{
-	width: 150px;
-	height: 40px;
-}
-
-.descripcion-container{
-	margin:30px;
-	width: 550px;
-}
-
-.texto{
-	margin: 10px;
-}
-
-.comprar-boton{
-	background-color: #3483FA;
-	color: white;
-	font-size: 14px;
-}
-
-.descripcion{
-	font-size: 12px;
-
-}
-
-.texto-descripcion{
-	font-size: 18px;
-
-}
-
-.buttonContainer {
-	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
 }
 
 .par {
@@ -72,8 +29,45 @@
 	display: flex;
 }
 
+.par .imageCards {
+	transform: rotate(2.39deg);
+	/* animation: 4s linear 0s infinite MoveUpDown; */
+}
+
+.impar .imageCards {
+	/* transform: rotate(-3.09deg); */
+	transform: rotate(-2.95deg);
+}
+
+
 .textContainer {
 	display: flex;
 	justify-content: center;
 	margin: 5%;
+}
+
+img {
+	animation: MoveCard 9s;
+	animation-iteration-count: infinite;
+}
+
+.cardName {
+	font-family: 'Milonga', cursive;
+	font-size: 26px;
+	color: #583976;
+}
+
+.cardDescription {
+	font-family: 'Jost', sans-serif;
+	font-size: 16px;
+	color: #333333;
+}
+
+@keyframes MoveCard {
+	0% { transform: translateY(0px) rotate(0deg); }
+	20% { transform: translateY(20px) rotate(-1deg); }
+	40% { transform: translateY(40px) rotate(2deg); }
+	60% { transform: translateY(60px) rotate(3deg); }
+	80% { transform: translateY(40px) rotate(-3deg); }
+	100% { transform: translateY(0px) rotate(2deg); }
 }

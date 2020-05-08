@@ -1,0 +1,38 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-family: 'Jost', sans-serif; */
+  /* font-family: 'Milonga', cursive; */
+
+.aboutMeMainContainer {
+  margin: 10px;
+  width: 80%;
+  height: 50vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  /* width: 30%; */
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 50%;
+}
+
+p {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+}

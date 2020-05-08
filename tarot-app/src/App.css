@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 .App {
   text-align: center;
 }
@@ -45,11 +48,38 @@ ul {
 
 li {
   list-style-type: none;
-  padding: 20px; 
+  margin: 10px;
+  background-color: #8FE4EF;
+  padding: 2px 15px;
+  border-radius: 60px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #DBD6E0;
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+}
+
+.footerUs {
+  color: #333333;
+}
+
+.footerUsA {
+  color: #583976;
+}
+
+.navMenuLinks {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  color: white;
 }
 

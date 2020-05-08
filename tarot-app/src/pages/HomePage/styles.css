@@ -1,16 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-.main-container {
-    display: flex;
-    padding: 100px;
+.mainContainerHome {
+  display: flex;
+	padding: 100px;
+	flex-direction: row;
  }
 
-.text-container {
+.textContainer {
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		width: 40%;
 }
 
-.image-container {
+.textTitle {
+	/* font-family: 'Libre Baskerville', serif; */
+	font-family: 'Milonga', cursive;
+	font-size: 30px;
+}
+
+.textDescription {
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+}
+
+.imageContainer {
 	display: flex;
 	width: 50%;
 }
@@ -43,19 +58,29 @@
 	transform: rotate(3.13deg);
 }
 
-.text-container {
+.textContainer {
 	text-align: center;
 }
 
-.button-container {
-	background-color: pink;
-	width: 10rem;
-	height: 3rem;
+.buttonContainer {
 	margin-top: 10px;
 	text-align: center;
 	margin: auto;
 	display: flex;
 	justify-content: center;
+	margin-top: 20px;
+	width: 147px;
+	height: 34px;
+	left: 945px;
+	top: 496px;
+	background: #CBABE3;
+	border-radius: 60px;
+	font-family: 'Jost', sans-serif;
+	font-size: 18px;
+}
+
+.linkHome {
+	color: white;
 }
 
 a {
