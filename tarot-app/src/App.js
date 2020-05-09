@@ -5,6 +5,7 @@ import AllDetailCards from './pages/AllDetailCards/AllDetailCards';
 import HomePage from './pages/HomePage/HomePage';
 import Shuffle from './pages/Shuffle/Shuffle';
 import DetailCard from './pages/AboutMe/AboutMe';
+import Donate from './pages/Donate/Donate';
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,6 +30,9 @@ class App extends Component {
               <li classNAme="links" >
                 <Link to="/about-me" className="navMenuLinks">Sobre Mí</Link>
               </li>
+              <li classNAme="links" >
+                <Link to="/donate" className="navMenuLinks">Donar</Link>
+              </li>
             </ul>
             <Switch>
               <Route exact path="/">
@@ -42,6 +46,9 @@ class App extends Component {
               </Route>
               <Route path="/shuffle">
                 <Shuffle />
+              </Route>
+              <Route path="/donate">
+                <Donate />
               </Route>
             </Switch>
           </div>

@@ -6,7 +6,7 @@ import Button from '../../Components/Button/Button';
 class AllDetailCards extends Component {
   render() {
     return (
-      <div className="mainContainer">
+      <div className="mainContainerAllCards">
         <div className="buttonCardsContainer">
           {
             images.map((elem, index) => {

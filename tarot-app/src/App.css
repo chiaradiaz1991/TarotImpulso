@@ -59,22 +59,33 @@ a {
   color: black;
 }
 
+body {
+  /* background-color: #000000; */
+  background-color: white;
+}
+
 .footer {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #DBD6E0;
+  background: #DBD6E0;
   font-family: 'Jost', sans-serif;
   font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;  
 }
 
 .footerUs {
   color: #333333;
+  font-size: 14px;
 }
 
 .footerUsA {
   color: #583976;
+  font-size: 14px;
 }
 
 .navMenuLinks {
@@ -83,3 +94,37 @@ a {
   color: white;
 }
 
+
+@media only screen and (max-width: 425px) {
+  .list-containe {
+    display: flex;
+    background-color: pink;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    /* left: 0;
+    right: 0; */
+    text-align: center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* padding-right: 30px; */
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80px;
+    padding-bottom: 15px;
+  }
+
+  .footerUs {
+    text-align: center;
+    margin: 0;
+  }
+}

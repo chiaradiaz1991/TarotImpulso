@@ -34,6 +34,8 @@ font-family: 'Jost', sans-serif; */
   color: white;
   font-size: 20px;
   font-family: 'Jost', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonInactive {

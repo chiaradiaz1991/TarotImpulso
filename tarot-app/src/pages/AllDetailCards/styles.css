@@ -7,10 +7,10 @@
   /* font-family: 'Milonga', cursive; */
 
 
-.mainContainer {
+.mainContainerAllCards {
 	display: flex;
 	flex-direction: column;
-	margin: 5%;
+	margin: 3%;
 }
 
 .buttonCardsContainer {
@@ -46,9 +46,11 @@
 	margin: 5%;
 }
 
-img {
+.imageCards {
 	animation: MoveCard 9s;
 	animation-iteration-count: infinite;
+	width: 300px;
+	height: 430px;
 }
 
 .cardName {
