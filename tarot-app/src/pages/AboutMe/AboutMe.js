@@ -10,7 +10,7 @@ class AboutMe extends Component {
         <div className="texts">
           <p>¡Hola, Mi nombre es Chiara!</p>
           <p>Soy programadora front end e ilustradora</p>
-          <p>agregar un poco mas de mi</p>
+          
           <div>icono behance</div>
           <div>icono instagram</div>
           <div>icono github</div>

@@ -22,7 +22,8 @@
 
 .textDescription {
 	font-family: 'Jost', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
+	text-align: left;
 }
 
 .imageContainer {
@@ -126,6 +127,9 @@ a {
 		margin-top: 65vh;
 		padding-bottom: 20%;
 	}
+}
+.textDescriptionB {
+	font-size: 16px;
 }
 
 @media only screen and (min-width:426px) and (max-width: 768px) {

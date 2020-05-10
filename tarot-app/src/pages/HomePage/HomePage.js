@@ -24,7 +24,11 @@ class HomePage extends Component {
         <div className="textContainer">
           <p className="textTitle">¡Bienvenidx! cambiar la tipografia</p>
           <p className="textDescription">
-          Te invito a que conozcas el mazo de Tarot que ilustré. Descubrí que energía disponible tenés el día de hoy. Esta basado en los 22 arcanos mayores del tarot Marselle (cambiar texto, agregar titulo del tarot)
+            Me alegro que estés acá. Te invito a que conozcas el mazo de Tarot que ilustré con mucho amor y dedicación. Le puse el nombre de Tarot Esta basado en los 22 arcanos mayores del Tarot Marselle.
+          </p>
+          <span />
+          <p className="textDescriptionB">
+            Descubrí qué energía disponible del día de hoy.
           </p>
           <div className="buttonContainer">
             <Link to="/shuffle" className="linkHome">Azar</Link>
