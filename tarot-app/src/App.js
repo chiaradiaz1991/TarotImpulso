@@ -13,33 +13,13 @@ import {
   Link
 } from "react-router-dom";
 
-import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./Components/globalStyles";
-import { lightTheme, darkTheme } from "./theme";
-import  {useDarkMode} from "./Components/useDarkMode";
-import Toggle from './Components/Toggle/Toggle';
 
-
-// class App extends Component {
-
-const App = () => {
-  // const [videos, setVideos] = useState([]);
-  // const [theme, setTheme] = useState('light');
-  // const themeToggler = () => {
-  //   theme === 'light' ? setTheme('dark') : setTheme('light')
-  // }
-
-  const [theme, themeToggler] = useDarkMode();
-
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
 
 
+const App = () => {
   return (
-    <ThemeProvider theme={themeMode}>
       <>
-        <GlobalStyles />
-        <Toggle theme={theme} toggleTheme={themeToggler} />
         <div>
           <Router>
             <div className="list-container">
@@ -82,7 +62,6 @@ const App = () => {
           </div>
         </div>
       </>
-    </ThemeProvider>
   );
 }
 
