@@ -1,0 +1,45 @@
+
+.mainContainerCard{
+  display: flex;
+  align-items: center;
+  .cardContainer {
+    margin-left: 240px;
+    margin-right: 100px;
+      .cardSelected {
+        width: 300px;
+        height: 420px;
+        box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
+        transform: rotate(-2.62deg);
+      }
+    }
+  .textContainerCard {
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    text-align: left;
+
+    .textTitleCard {
+      color: $text-colour2;
+      font-family: $text-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 32px;
+    }
+    .textDescriptionCard {
+      font-family: $text-font;
+      color: $text-colour1;
+      font-family: Jost;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+      margin-top: 26px;
+    }
+  }
+}
+
+
+

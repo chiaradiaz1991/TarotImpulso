@@ -1,0 +1,79 @@
+
+
+.mainContainerApp {
+  .mainContainerAppNavLinks {
+    display: flex;
+    flex-direction: column;
+    .logoContainer {
+      .logo {
+        width: 345px;
+        height: 51px;
+      }
+    }
+    .listContainer {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+          .navMenuLinks {
+            font-size: 18px;
+            color: $purple;
+            font-family: Jost;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 26px;
+            margin-left: 52px;
+          }
+      }
+    }
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    background-color: rgba(203, 171, 227, 0.3);
+    .footerUs {
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: $text-colour1;
+      .footerUsA {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $purple;
+      }
+    }
+  } 
+}
+
+.logoContainer {
+  
+}
+
+.otherLinks {
+  display: flex;
+  margin-right: 54px;
+}
+
+
+
+
+
+

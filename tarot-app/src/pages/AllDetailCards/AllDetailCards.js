@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './styles.css';
 import images from '../../data';
 import Button from '../../Components/Button/Button';
 
@@ -14,7 +13,7 @@ class AllDetailCards extends Component {
             })
           }
         </div>
-        <div>
+        <div className="allCardsContainer">
           {images.map(({ id, src, title, description }) =>
             <div className={id % 2 === 0 ? 'par' : 'impar'}>
               <img key={id} src={src} id={id} className="imageCards" />
