@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.css';
 import image1 from '../../assets/image01.jpg';
 import image2 from '../../assets/image02.jpg';
 import image3 from '../../assets/image03.jpg';
@@ -292,16 +291,16 @@ class Shuffle extends React.Component {
 
 
 
-
-
   render() {
     const { cards, active, card, description } = this.state;
     return (
-      <div className="mainContainer">
-        <div className="containerTitle">
-          <p className="pickACard">Elegí tu carta del día</p>
+      <div className="mainContainerShuffle">
+        <div className="containerTitleShuffle">
+          {active == false && (
+            <p className="pickACard">Elegí tu carta del día</p>
+          )}
         </div>
-        <div className="cardsContainer">
+        <div className="cardsContainerShuffle">
           {
             active === false && (
               <div className="backSideContainer">
@@ -311,7 +310,7 @@ class Shuffle extends React.Component {
               </div>
             )
           }
-          <div className="cardSelectedContainer">
+          <div className="cardSelectedContainerShuffle">
             {
               active === true && (
                 <Card
@@ -324,9 +323,11 @@ class Shuffle extends React.Component {
             }
           </div>
         </div>
-        <button className={active ? 'buttonActive' : 'buttonInactive'} onClick={() => this.handleSuffle()}>
-          Tirá otra
+        <div className="buttonActiveContainer">
+          <button className={active ? 'buttonActive' : 'buttonInactive'} onClick={() => this.handleSuffle()}>
+            Tirá otra
       </button>
+        </div>
       </div >
     )
   }

@@ -1,67 +1,74 @@
 
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
 import AllDetailCards from './pages/AllDetailCards/AllDetailCards';
 import HomePage from './pages/HomePage/HomePage';
 import Shuffle from './pages/Shuffle/Shuffle';
 import DetailCard from './pages/AboutMe/AboutMe';
 import Donate from './pages/Donate/Donate';
+import Wrapper from './Components/Wrapper/Wrapper';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-
+import logo from '../src/assets/Logo.svg'
 
 
 
 
 const App = () => {
   return (
-      <>
-        <div>
+    <>
+      <div className="mainContainerApp">
+        <div className="mainContainerAppNavLinks">
           <Router>
-            <div className="list-container">
-              <ul>
-                <li classNAme="links" >
-                  <Link to="/" className="navMenuLinks">Home</Link>
-                </li>
-                <li classNAme="links" >
-                  <Link to="/all-cards" className="navMenuLinks">Cartas</Link>
-                </li>
-                <li classNAme="links" >
-                  <Link to="/about-me" className="navMenuLinks">Sobre Mí</Link>
-                </li>
-                <li classNAme="links" >
-                  <Link to="/donate" className="navMenuLinks">Donar</Link>
-                </li>
-              </ul>
-              <Switch>
-                <Route exact path="/">
-                  <HomePage />
-                </Route>
-                <Route path="/all-cards">
-                  <AllDetailCards />
-                </Route>
-                <Route path="/about-me">
-                  <DetailCard />
-                </Route>
-                <Route path="/shuffle">
-                  <Shuffle />
-                </Route>
-                <Route path="/donate">
-                  <Donate />
-                </Route>
-              </Switch>
-            </div>
+            <Wrapper>
+              <div className="listContainer">
+                <ul>
+                  <div className="logoContainer" >
+                    <li className="links">
+                      <Link to="/" className="navMenuLinks"><img src={logo} alt="logo" /></Link>
+                    </li>
+                  </div>
+                  <div className="otherLinks">
+                    <li className="links">
+                      <Link to="/all-cards" className="navMenuLinks">Cartas</Link>
+                    </li>
+                    <li className="links">
+                      <Link to="/about-me" className="navMenuLinks">Sobre Mí</Link>
+                    </li>
+                    <li className="links">
+                      <Link to="/donate" className="navMenuLinks">Donar</Link>
+                    </li>
+                  </div>
+                </ul>
+                <Switch>
+                  <Route exact path="/">
+                    <HomePage />
+                  </Route>
+                  <Route path="/all-cards">
+                    <AllDetailCards />
+                  </Route>
+                  <Route path="/about-me">
+                    <DetailCard />
+                  </Route>
+                  <Route path="/shuffle">
+                    <Shuffle />
+                  </Route>
+                  <Route path="/donate">
+                    <Donate />
+                  </Route>
+                </Switch>
+              </div>
+            </Wrapper>
           </Router>
-          <div className="footer">
-            <p className="footerUs">Esta página fue desarrollada con 💖por <a href="https://www.github.com/chiaradiaz1991" target="_blank" className="footerUsA"> Chiara Diaz</a></p>
-            <p className="footerUs">Esta página fue diseñada con 💖por <a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA"> Deandra Delgado</a></p>
-          </div>
         </div>
-      </>
+        <div className="footer">
+          <p className="footerUs">Esta página fue desarrollada por <a href="https://www.github.com/chiaradiaz1991" target="_blank" className="footerUsA"> Chiara Diaz</a> y diseñada por <a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA"> Deandra Delgado</a> con 💖</p>
+        </div>
+      </div>
+    </>
   );
 }
 

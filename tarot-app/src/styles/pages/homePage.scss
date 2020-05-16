@@ -1,0 +1,144 @@
+
+.mainContainerHome {
+  display: flex;
+	flex-direction: row;
+	justify-content: center;
+	.imageContainer {
+		display: flex;
+		width: 60%;
+		margin-left: 88px;
+		.image1 {
+			position: absolute;
+			width: 220px;
+			height: 320px;
+			margin-left: 68px;
+			margin-top: 68px;
+			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
+			transform: rotate(-6.69deg);
+		}
+		
+		.image2 {
+			margin-left: 280.84px;
+			margin-top: 121px;
+			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
+			transform: rotate(3.47deg);
+			position: absolute;
+			width: 220px;
+			height: 320px;
+			z-index: 1;
+		}
+		
+		.image3{
+			position: absolute;
+			margin-left: 168.45px;
+			margin-top: 328px;
+			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
+			transform: rotate(7.92deg);
+			width: 220px;
+			height: 320px;
+			z-index: 2;
+		}
+		
+		.image4 {
+			position: absolute;
+			margin-left: 424.46px;
+			margin-top: 271px;
+			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
+			transform: rotate(3.58deg);
+			width: 220px;
+			height: 320px;
+		}
+	}
+	.textContainer {
+		display: flex;
+		flex-direction: column;
+		margin-right: 96px;
+		width: 40%;
+		text-align: right;
+		margin-top: 15%;
+		.textDescription {
+			font-size: 18px;
+			text-align: right;
+			color: $text-colour1;
+			font-family: $text-font;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 26px;
+			display: flex;
+			align-items: center;
+			text-align: right;
+
+		}
+		.textDescriptionBContainer{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin-top: 41px;
+			.textDescriptionBContainerTexts {
+				display: flex;
+				flex-direction: column;
+				.textDescriptionB {
+					color: $yellow;
+					font-family: $text-font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 22px;
+					line-height: 22px;
+					align-items: center;
+					margin-right: 15px;
+				}
+			}
+			img {
+				width: 75px;
+				height: 75px;
+			}
+		}
+		.buttonMainContainer {
+			display: flex;
+			justify-content: flex-end;
+			.buttonContainer {
+				margin-top: 10px;
+				display: flex;
+				justify-content: center;
+				margin-top: 41px;
+				width: 180px;
+				height: 44px;
+				background: $violet;
+				border-radius: 60px;
+				align-items: center;
+				box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
+				color: $white;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: bold;
+				font-family: $text-font;
+				left: 0%;
+				right: 0%;
+				top: 0%;
+				bottom: 0%;
+				.linkHome {
+					color: $white;
+				}
+			}	
+		}
+	}
+
+
+  @include breakpoint(largeTablet) {
+    // height: 90vh;
+		// width: 80%;
+		background-color: pink;
+  }
+  @include breakpoint(tablet) {
+		background-color: green;
+    // height: 90vh;
+    // width: 95%;
+  }
+  @include breakpoint(largePhone) {
+    // height: 90vh;
+		// width: 100%;
+		background-color: indianred;
+  }
+ }
+
+	

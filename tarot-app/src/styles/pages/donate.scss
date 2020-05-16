@@ -1,0 +1,45 @@
+
+.donateContainer {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ height: 80vh;
+  .donate {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    // color: #583976;
+  }
+  .containerLinks {
+    display: flex; 
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+    .link {
+      .stars {
+        font-family: 'Jost', sans-serif;
+        font-size: 18px;
+        // color:#CBABE3;
+      }
+    }
+  }
+  .footerText {
+    font-family: $text-font;
+    font-size: 16px;
+    // color:#333333;
+  }
+  .footerTextThanks {
+    font-family: $text-font;
+    font-size: 16px;
+    // color:#CBABE3;
+  }
+}
+
+
+
+
+
+
+
+
+
+
