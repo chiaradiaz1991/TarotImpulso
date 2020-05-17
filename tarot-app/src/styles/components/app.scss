@@ -12,20 +12,30 @@
     }
     .listContainer {
       ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        list-style: none;
-        align-items: center;
-          .navMenuLinks {
-            font-size: 18px;
-            color: $purple;
-            font-family: Jost;
-            font-style: normal;
-            font-weight: bold;
-            line-height: 26px;
-            margin-left: 52px;
-          }
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      margin: 30px;
+        .navMenuLinks {
+          font-size: 18px;
+          color: $purple;
+          font-family: $text-font;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 26px;
+          margin-left: 52px;
+        }
+        .navMenuLinks:active {
+          font-size: 18px;
+          color: $blue;
+          font-family: $text-font;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 26px;
+          margin-left: 52px;
+        }
       }
     }
   }

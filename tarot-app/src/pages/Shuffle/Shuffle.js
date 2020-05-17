@@ -279,16 +279,13 @@ class Shuffle extends React.Component {
         descriptionCard = '';
         break;
     }
-    console.log('HOLIS---> ', descriptionCard)
     return descriptionCard;
   }
-
 
 
   componentDidMount() {
     this.handleSuffle();
   }
-
 
 
   render() {

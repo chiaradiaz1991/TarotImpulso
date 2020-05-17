@@ -2,27 +2,71 @@
 
 
 .aboutMeMainContainer {
-  margin: 10px;
-  width: 80%;
-  height: 50vh;
+  height: 90vh;
   padding: 100px;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  .imageAboutMe {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    /* width: 30%; */
+  background-color: $background;
+  .leftContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 60px;
+    .imageAboutMeContainer {
+      width: 246px;
+      height: 246px;
+      background-color: $white;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      .imageAboutMe {
+        width: 209px;
+        height: 209px;
+        border-radius: 50%;
+      }
+    }
+    .socialAboutMe {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 209px;
+      margin: auto;
+      margin-top: 31px;
+      .socialAboutMeIcon {
+        width: 32px;
+        height: 42px;
+      }
+    }
   }
   .textAboutMe {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    width: 50%;
-    p {
-      font-family: 'Jost', sans-serif;
-      font-size: 18px;
+    width: 562px;
+    .myName {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: $purple;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 24px;
+      font-family: $text-font;
+    }
+    .presentation {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+    .presentationTwo {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
     }
   }
 }

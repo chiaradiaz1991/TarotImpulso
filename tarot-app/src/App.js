@@ -13,6 +13,7 @@ import {
   Link
 } from "react-router-dom";
 import logo from '../src/assets/Logo.svg'
+import AllCollection from './pages/AllCollection/AllCollection';
 
 
 
@@ -58,6 +59,9 @@ const App = () => {
                   </Route>
                   <Route path="/donate">
                     <Donate />
+                  </Route>
+                  <Route path="/all-collection">
+                    <AllCollection />
                   </Route>
                 </Switch>
               </div>

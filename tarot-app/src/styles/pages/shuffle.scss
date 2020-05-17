@@ -31,21 +31,25 @@
         box-shadow: 20px 20px 30px rgba(212, 212, 212, 0.8);
       }
       #one{
-        transform: rotate(-5.95deg);
+        animation: MoveCard1 9s;
+        animation-iteration-count: infinite;
       }
       
       #two {
-        transform: rotate(3.22deg);
+        animation: MoveCard2 9s;
+        animation-iteration-count: infinite;
       }
       
-      #three {
-        transform: rotate(-1.69deg);
+      #three{
+        animation: MoveCard3 9s;
+        animation-iteration-count: infinite;
       }
     }
   }
 
 .cardSelectedContainerShuffle {
-
+  display: flex;
+  justify-content: center;
 }
 
 .buttonActiveContainer {
@@ -72,15 +76,28 @@
   }
 }
 
-
 .mainContainerBack {
   display: flex;
   flex-direction: row;
 }
 
+@keyframes MoveCard1 {
+	0% { transform: translateY(0px) rotate(-5.95deg); }
+	40% { transform: translateY(40px) rotate(-4deg); }
+	100% { transform: translateY(0px) rotate(-5.95deg); }
+}
 
+@keyframes MoveCard2 {
+	0% { transform: translateY(0px) rotate(3.22deg); }
+	40% { transform: translateY(40px) rotate(2.22deg); }
+	100% { transform: translateY(0px) rotate(3.22deg); }
+}
 
-
+@keyframes MoveCard3 {
+	0% { transform: translateY(0px) rotate(-1.69deg); }
+	40% { transform: translateY(40px) rotate(-2.69deg); }
+	100% { transform: translateY(0px) rotate(-1.69deg); }
+}
 
 
 

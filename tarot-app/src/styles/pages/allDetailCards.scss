@@ -1,65 +1,159 @@
 .mainContainerAllCards {
 	display: flex;
 	flex-direction: column;
-	margin: 3%;
-	.buttonCardsContainer {
+	border-top: 1px solid #E3E3E3;
+	.allDetailTextContainer {
 		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
-		margin-bottom: 50px;
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 81px;
+		margin-top: 63px;
+		width: 58%;
+		.viewAllCollectionText {
+			color: $purple;
+    	text-decoration: none;
+			margin-left: 60px;
+		}
+		.textAllCards {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 26px;
+			color: $purple;
+		}
+		.textTitleCards {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 35px;
+			color: $yellow;
+		}
+	}
+	.buttonActiveOptions {
+		display: flex;
+		flex-wrap: wrap;
+		width: 1100px;
+		margin: auto;
+
 	}
 	.allCardsContainer {
+		padding-top: 80px;
+		background-color: $background;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 200px;
 		.par {
 			display: flex;
 			flex-direction: row-reverse;
-		}
-		
-		.impar {
-			display: flex;
-		}
-		
-		.par .imageCards {
-			transform: rotate(2.39deg);
+			width: 1100px;
+			margin: auto;
+			margin-top: 80px;
 			.textContainer {
 				display: flex;
 				justify-content: center;
-				margin: 5%;
-				.cardName {
-					font-family: 'Milonga', cursive;
-					font-size: 26px;
-					// color: #583976;
+				width: 600px;
+				flex-direction: column;
+				text-align: right;
+				margin-right: 80px;
+				.textCardNameContainer{
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					.cardName1 {
+						font-family: $text-font2;
+						font-style: normal;
+						font-weight: 800;
+						font-size: 25px;
+						line-height: 29px;
+						color: $purple;
+						margin-right: 5px;
+					}
+					.cardName2 {
+						color: $purple;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 25px;
+						line-height: 29px;
+						font-family: $text-font;
+					}
 				}
-
+	
 				.cardDescription {
-					font-family: 'Jost', sans-serif;
-					font-size: 16px;
-					// color: #333333;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 28px;
+					display: flex;
+					align-items: center;
+					font-size: $text-font;
+					color: $text-font;
 				}
 			}
 		}
 		
-		.impar .imageCards {
-			transform: rotate(-2.95deg);
+		.impar {
+			display: flex;
+			margin-top: 80px;
+			width: 1100px;
+			margin: auto;
 			.textContainer {
 				display: flex;
 				justify-content: center;
-				margin: 5%;
-				.cardName {
-					font-family: 'Milonga', cursive;
-					font-size: 26px;
-					// color: #583976;
+				width: 600px;
+				flex-direction: column;
+				text-align: left;
+				margin-left: 80px;
+				.textCardNameContainer{
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					.cardName1 {
+						font-family: $text-font2;
+						color: $purple;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 25px;
+						line-height: 29px;
+						margin-right: 5px;
+					}
+					.cardName2 {
+						color: $purple;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 25px;
+						line-height: 29px;
+						font-family: $text-font;
+					}
 				}
 
 				.cardDescription {
-					font-family: 'Jost', sans-serif;
-					font-size: 16px;
-					// color: #333333;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 28px;
+					display: flex;
+					align-items: center;
+					font-size: $text-font;
+					color: $text-font;
 				}
 			}	
+		}
+		
+		.par .imageCards {
+			transform: rotate(2.39deg);
+			box-shadow: 20px 20px 30px rgba(212, 212, 212, 0.8);
+
+		}
+		
+		.impar .imageCards {
+			transform: rotate(-2.95deg);
+			box-shadow: 20px 20px 30px rgba(212, 212, 212, 0.8);
+
 		}	
 	}
 }
-
 
 
 .imageCards {
@@ -70,10 +164,7 @@
 }
 
 @keyframes MoveCard {
-	0% { transform: translateY(0px) rotate(1deg); }
-	20% { transform: translateY(20px) rotate(-1deg); }
-	40% { transform: translateY(40px) rotate(2deg); }
-	60% { transform: translateY(60px) rotate(4deg); }
-	80% { transform: translateY(40px) rotate(-3deg); }
-	100% { transform: translateY(0px) rotate(1deg); }
+	0% { transform: translateY(0px) rotate(0deg); }
+	40% { transform: translateY(40px) rotate(0.5deg); }
+	100% { transform: translateY(0px) rotate(0deg); }
 }
