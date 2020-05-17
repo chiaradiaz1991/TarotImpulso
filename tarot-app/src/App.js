@@ -69,7 +69,7 @@ const App = () => {
           </Router>
         </div>
         <div className="footer">
-          <p className="footerUs">Esta página fue desarrollada por <a href="https://www.github.com/chiaradiaz1991" target="_blank" className="footerUsA"> Chiara Diaz</a> y diseñada por <a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA"> Deandra Delgado</a> con 💖</p>
+          <p className="footerUs">Esta página fue desarrollada por <a href="https://www.github.com/chiaradiaz1991" target="_blank" className="footerUsA"> Chiara Diaz </a> y diseñada por <a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA"> Deandra Delgado</a>con 💖</p>
         </div>
       </div>
     </>

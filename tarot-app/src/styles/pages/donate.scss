@@ -3,35 +3,62 @@
  display: flex;
  flex-direction: column;
  text-align: center;
- height: 80vh;
-  .donate {
-    font-family: 'Jost', sans-serif;
-    font-size: 20px;
-    // color: #583976;
+ margin-top: 100px;
+  .donateText {
+    font-family: $text-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: $text-colour1;
   }
   .containerLinks {
+    width: 80vw;
     display: flex; 
+    margin: auto;
     justify-content: space-around;
-    margin-bottom: 50px;
-    padding-bottom: 150px;
-    .link {
-      .stars {
-        font-family: 'Jost', sans-serif;
-        font-size: 18px;
-        // color:#CBABE3;
+    flex-direction: column;
+    padding-top: 37px;
+    .likeProject {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+      color: $purple;
+    }
+    .linksDonate {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .linkDonate {
       }
     }
+
   }
-  .footerText {
-    font-family: $text-font;
-    font-size: 16px;
-    // color:#333333;
+  .donateFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 39px;
+    .cards{
+      width: 130px;
+      height: 36px;
+      margin: auto;
+    }
+    .footerText {
+      font-family: $text-font;
+      padding-top: 20px;
+      color: $text-colour1;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: center;
+    }
   }
-  .footerTextThanks {
-    font-family: $text-font;
-    font-size: 16px;
-    // color:#CBABE3;
-  }
+
 }
 
 
