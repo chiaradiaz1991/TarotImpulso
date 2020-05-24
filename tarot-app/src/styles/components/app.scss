@@ -240,7 +240,6 @@
                 font-style: normal;
                 font-weight: bold;
                 line-height: 26px;
-                // margin-left: 52px;
                 margin-left: 0px;
               }
               .activeLink {
@@ -250,7 +249,6 @@
                 font-style: normal;
                 font-weight: bold;
                 line-height: 26px;
-                // margin-left: 52px;
               }
 
               .otherLinks {
@@ -306,27 +304,13 @@
       flex-direction: column;
       .listContainer {
         .desktop-view {
-          // display: none;
         }
         .mobile-view {
           display: none;
-          // display: flex;
-          // justify-content: space-between;
-          // padding-left: 20px;
-          // padding-right: 20px;
-          // padding-top: 20px;
           .logoContainerMobile {
-            // display: flex;
-            // justify-content: center;
-            // background-color: $white;
-            // margin-bottom: 12px;
-            // z-index: 2000;
-            // list-style: none;
             .linkLogoMobile {
               .navMenuLogoMobile {
-                // margin-left: 0px;
                 img {
-                  // width: 172px;
                 }
               }
             }
@@ -335,33 +319,11 @@
       }
     }
     .footer {
-      // display: none;
     }
     .footerMobile {
       display: none;
-      // height: 100px;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // position: fixed;
-      // bottom: 0;
-      // height: 50px;
-      // width: 100%;
-      // background-color: $background;
       .footerUsMobile {
-        // margin-bottom: 0px;
-        // font-size: 10px;
-        // font-style: normal;
-        // font-weight: normal;
-        // font-size: 10px;
-        // text-align: center;
-        // color: $text-colour1;
         .footerUsAMobile {
-          // font-size: 10px;
-          // font-style: normal;
-          // font-weight: normal;
-          // font-size: 10px;
-          // color: $purple;
         }
       }
     }

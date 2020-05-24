@@ -185,16 +185,11 @@
       }
     }
     .cardsContainerShuffle {
-      // width: 100vw;
-      // height: 300px;
       .backSideContainer {
-        // height: 170px;
-        // width: 100%;
         display: flex;
         justify-content: space-around;
         .card {
           margin: 0;
-          // height: 100%;
         }
       }
       .cardSelectedContainerShuffle {
