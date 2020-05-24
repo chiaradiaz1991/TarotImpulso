@@ -1,0 +1,19 @@
+
+.scroll {
+  .upButton {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: 15px 0px;
+  }
+}
+
+
+@include respond(phone) {  
+  .scroll {
+    .upButton{
+    right: 0;
+    margin: 20px -25px;
+    }
+  }
+}

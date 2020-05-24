@@ -28,14 +28,18 @@
       text-align: center;
       color: $purple;
     }
-    .linksDonate {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      .linkDonate {
+    .donate-desktop {
+      .linksDonate {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .link {
+        }
       }
     }
-
+    .donate-mobile {
+      // display: none;
+    }
   }
   .donateFooter {
     display: flex;
@@ -58,11 +62,83 @@
       text-align: center;
     }
   }
-
 }
 
 
+@include respond(phone) { 
+  .donateContainer {
+    margin-top: 70px;
+    .donateText {
+      width: 280px;
+      margin: auto;
+      font-size: 14px;
+    }
+    .containerLinks {
+      .likeProject {
+        font-size: 18px;
+      }
+      .donate-desktop {
+        display: none;
+      }
+      .donate-mobile {
+        .linksDonate {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .link {
+          }
+        }
+      }
+    }
+    .donateFooter {
+      margin-bottom: 140px;
+      .cards {
 
+      }
+      .footerText {
+        width: 280px;
+        margin: auto;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@include respond(tabletmini) { 
+  .donateContainer {
+
+     .donateText {
+
+     }
+     .containerLinks {
+
+       .likeProject {
+
+       }
+       .donate-desktop {
+         .linksDonate {
+
+           .link {
+           }
+         }
+       }
+       .donate-mobile {
+         display: none;
+       }
+     }
+     .donateFooter {
+
+       .cards{
+
+       }
+       .footerText {
+
+       }
+     }
+   }
+   
+}
 
 
 

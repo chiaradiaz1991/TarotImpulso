@@ -99,6 +99,44 @@
 	100% { transform: translateY(0px) rotate(-1.69deg); }
 }
 
+@include respond(phone) {
+  .mainContainerShuffle {
+    height: 80vh;
+    .containerTitleShuffle {
+      margin-top: 70px;
+      .pickACard {
+        font-size: 20px;
+
+      }
+    }
+    .cardsContainerShuffle {
+      width: 100vw;
+      height: 300px;
+      .backSideContainer {
+        height: 170px;
+        width: 320px;
+        .card {
+          margin: 0;
+          height: 100%;
+        }
+      }
+      .cardSelectedContainerShuffle {
+
+      }
+    }
+    .buttonActiveContainer {
+      margin-top: 270px;
+      .buttonActive {
+
+      }
+      .buttonInactive {
+
+      }
+    }
+  }
+
+}
+
 
 
 

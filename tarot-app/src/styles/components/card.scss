@@ -5,8 +5,8 @@
   .cardContainer {
     margin-right: 100px;
       .cardSelected {
-        width: 300px;
-        height: 420px;
+        width: 275px;
+        height: 375px;
         box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
         transform: rotate(-2.62deg);
       }
@@ -19,7 +19,7 @@
 
     .textTitleCard {
       color: $text-colour2;
-      font-family: $text-font;
+      font-family: $text-font2;
       font-style: normal;
       font-weight: bold;
       font-size: 28px;
@@ -41,4 +41,30 @@
 }
 
 
-
+@include respond(phone) {
+  .mainContainerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cardContainer {
+      margin-right: 0px;
+      margin-bottom: 60px;
+      .cardSelected {
+        width: 150px;
+        height: 220px;
+      }
+    }
+    .textContainerCard {
+      height: 500px;
+      width: 285px;
+      .textTitleCard {
+        font-size: 22px;
+        text-align: center;
+      }
+      .textDescriptionCard {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

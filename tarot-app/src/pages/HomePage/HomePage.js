@@ -5,20 +5,14 @@ import image18 from '../../assets/image18.jpg';
 import image09 from '../../assets/image09.jpg';
 import { Link } from "react-router-dom";
 import imageBall from '../../assets/ball.png';
+import Cards from '../../assets/CardsDesktop.svg';
 
 class HomePage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div className="mainContainerHome">
         <div className="imageContainer">
-          <img className="image1" src={image17} />
-          <img className="image2" src={image14} />
-          <img className="image3" src={image18} />
-          <img className="image4" src={image09} />
+          <img src={Cards} alt="cards-desktop" className="frontImagesHome" />
         </div>
         <div className="textContainer">
           <p className="textDescription">

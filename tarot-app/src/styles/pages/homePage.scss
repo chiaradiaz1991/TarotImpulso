@@ -11,46 +11,9 @@
 		margin-left: 88px;
 		height: 90vh;
     margin-bottom: 90px;
-		.image1 {
-			position: absolute;
-			width: 220px;
-			height: 320px;
-			margin-left: 68px;
-			margin-top: 68px;
-			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
-			transform: rotate(-6.69deg);
-		}
-		
-		.image2 {
-			margin-left: 280.84px;
-			margin-top: 121px;
-			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
-			transform: rotate(3.47deg);
-			position: absolute;
-			width: 220px;
-			height: 320px;
-			z-index: 1;
-		}
-		
-		.image3{
-			position: absolute;
-			margin-left: 168.45px;
-			margin-top: 328px;
-			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
-			transform: rotate(7.92deg);
-			width: 220px;
-			height: 320px;
-			z-index: 2;
-		}
-		
-		.image4 {
-			position: absolute;
-			margin-left: 424.46px;
-			margin-top: 271px;
-			box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
-			transform: rotate(3.58deg);
-			width: 220px;
-			height: 320px;
+		.frontImagesHome {
+			width: 600px;
+			height: 700px;
 		}
 	}
 	.textContainer {
@@ -59,7 +22,6 @@
 		margin-right: 96px;
 		width: 40%;
 		text-align: right;
-		// margin-top: 15%;
 		.textDescription {
 			font-size: 18px;
 			text-align: right;
@@ -126,23 +88,70 @@
 			}	
 		}
 	}
+}
 
+  @include respond(phone) {
+	.mainContainerHome {
+		height: auto;
+		display: flex;
+    flex-direction: column;
+		.imageContainer {
+			width: 100%;
+			margin-left: 0px;
+			margin-bottom: 0px;
+			height: 350px;
+			.frontImagesHome{
+				width: 290px;
+				height: 290px;
+				margin: auto;
+			}
+		}
+		.textContainer {
+			margin-right: 0px;
+			width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+			.textDescription {
+				font-family: $text-font;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 20px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+			}
+			.textDescriptionBContainer {
+				margin-top: 0px;
+				justify-content: center;
+				.textDescriptionBContainerTexts {
+					.textDescriptionB {
+						font-family: $text-font;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 23px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						display: inline;
+					}
+				}
+				img {
+					display: none;
+				}
+			}
+			.buttonMainContainer {
+				margin-bottom: 130px;
+				display: flex;
+				justify-content: center;
+				.buttonContainer {
+					margin-top: 20px;
+					.linkHome {
 
-  @include breakpoint(largeTablet) {
-    // height: 90vh;
-		// width: 80%;
-		background-color: pink;
-  }
-  @include breakpoint(tablet) {
-		background-color: green;
-    // height: 90vh;
-    // width: 95%;
-  }
-  @include breakpoint(largePhone) {
-    // height: 90vh;
-		// width: 100%;
-		background-color: indianred;
-  }
- }
-
-	
+					}
+				}
+			}
+		}
+	}
+}

@@ -6,22 +6,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
-		justify-content: space-between;
-		margin-bottom: 81px;
+		justify-content: center;
+		margin-bottom: 40px;
 		margin-top: 63px;
-		width: 58%;
-		.viewAllCollectionText {
-			color: $purple;
-    	text-decoration: none;
-			margin-left: 60px;
-		}
-		.textAllCards {
-			font-style: normal;
-			font-weight: normal;
-			font-size: 18px;
-			line-height: 26px;
-			color: $purple;
-		}
 		.textTitleCards {
 			font-style: normal;
 			font-weight: bold;
@@ -35,7 +22,17 @@
 		flex-wrap: wrap;
 		width: 1100px;
 		margin: auto;
+		margin-bottom: 40px;
 
+	}
+	.viewAllCollectionTextContainer {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+		.viewAllCollectionText {
+			color: $purple;
+			text-decoration: none;
+		}
 	}
 	.allCardsContainer {
 		padding-top: 80px;
@@ -57,29 +54,14 @@
 				flex-direction: column;
 				text-align: right;
 				margin-right: 80px;
-				.textCardNameContainer{
-					display: flex;
-					align-items: center;
-					justify-content: flex-end;
-					.cardName1 {
-						font-family: $text-font2;
-						font-style: normal;
-						font-weight: 800;
-						font-size: 25px;
-						line-height: 29px;
-						color: $purple;
-						margin-right: 5px;
-					}
-					.cardName2 {
-						color: $purple;
-						font-style: normal;
-						font-weight: bold;
-						font-size: 25px;
-						line-height: 29px;
-						font-family: $text-font;
-					}
+				.cardTitleName {
+					color: $purple;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 26px;
+					line-height: 29px;
+					font-family: $text-font2;
 				}
-	
 				.cardDescription {
 					font-style: normal;
 					font-weight: normal;
@@ -98,6 +80,7 @@
 			margin-top: 80px;
 			width: 1100px;
 			margin: auto;
+			margin-top: 80px;
 			.textContainer {
 				display: flex;
 				justify-content: center;
@@ -105,29 +88,14 @@
 				flex-direction: column;
 				text-align: left;
 				margin-left: 80px;
-				.textCardNameContainer{
-					display: flex;
-					align-items: center;
-					justify-content: flex-start;
-					.cardName1 {
-						font-family: $text-font2;
-						color: $purple;
-						font-style: normal;
-						font-weight: bold;
-						font-size: 25px;
-						line-height: 29px;
-						margin-right: 5px;
-					}
-					.cardName2 {
-						color: $purple;
-						font-style: normal;
-						font-weight: bold;
-						font-size: 25px;
-						line-height: 29px;
-						font-family: $text-font;
-					}
+				.cardTitleName {
+					color: $purple;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 26px;
+					line-height: 29px;
+					font-family: $text-font2;
 				}
-
 				.cardDescription {
 					font-style: normal;
 					font-weight: normal;
@@ -167,4 +135,85 @@
 	0% { transform: translateY(0px) rotate(0deg); }
 	40% { transform: translateY(40px) rotate(0.5deg); }
 	100% { transform: translateY(0px) rotate(0deg); }
+}
+
+
+@include respond(phone) { 
+	.mainContainerAllCards {
+		.allDetailTextContainer {
+			.textTitleCards {
+
+			}
+		}
+		.buttonActiveOptions {
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0px;
+			display: none;
+		}
+		.viewAllCollectionTextContainer {
+			display: none;
+			.viewAllCollectionText {
+
+			}
+		}
+		.allCardsContainer {
+			.par {
+				display: flex;
+				flex-direction: column;
+				width: 100vw;
+				margin-top: 0px;
+				.imageCards {
+					width: 175px;
+					height: 240px;
+					margin: auto;
+					margin-bottom: 70px;
+				}
+				.textContainer {
+					width: 280px;
+					text-align: center;
+					width: 230px;
+					margin-left: 0px;
+					margin: auto;
+					.cardTitleName {
+						font-size: 22px;
+						font-family: $text-font2;
+					}
+					.cardDescription {
+						font-size: 14px;
+
+					}
+				}
+			}
+			.impar {
+				display: flex;
+				flex-direction: column;
+				width: 100vw;
+				margin-top: 0px;
+				.imageCards {
+					width: 175px;
+					height: 240px;
+					margin: auto;
+					margin-bottom: 70px;
+				}
+				.textContainer {
+					width: 280px;
+					text-align: center;
+					width: 230px;
+					margin-left: 0px;
+					margin: auto;
+					.cardTitleName {
+						font-size: 22px;
+						font-family: $text-font2;
+					}
+					.cardDescription {
+						font-size: 14px;
+						
+					}
+				}
+			}
+		}
+	}
+
 }

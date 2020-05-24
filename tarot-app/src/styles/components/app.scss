@@ -11,31 +11,33 @@
       }
     }
     .listContainer {
-      ul {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      list-style: none;
-      align-items: center;
-      margin: 30px;
-        .navMenuLinks {
-          font-size: 18px;
-          color: $purple;
-          font-family: $text-font;
-          font-style: normal;
-          font-weight: bold;
-          line-height: 26px;
-          margin-left: 52px;
-        }
-        .navMenuLinks:active {
-          font-size: 18px;
-          color: $blue;
-          font-family: $text-font;
-          font-style: normal;
-          font-weight: bold;
-          line-height: 26px;
-          margin-left: 52px;
-        }
+      .desktop-view {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          list-style: none;
+          align-items: center;
+          margin: 30px;
+            .navMenuLinks {
+              font-size: 18px;
+              color: $purple;
+              font-family: $text-font;
+              font-style: normal;
+              font-weight: bold;
+              line-height: 26px;
+              margin-left: 52px;
+            }
+            .activeLink {
+              font-size: 18px;
+              color: $yellow;
+              font-family: $text-font;
+              font-style: normal;
+              font-weight: bold;
+              line-height: 26px;
+              margin-left: 52px;
+            }
+          }
       }
     }
   }
@@ -48,7 +50,7 @@
     bottom: 0;
     height: 45px;
     width: 100%;
-    background-color: rgba(203, 171, 227, 0.3);
+    background-color: $background;
     .footerUs {
       margin-top: 20px;
       font-style: normal;
@@ -82,8 +84,107 @@
   margin-right: 54px;
 }
 
+@include respond(phone) {
+  .mainContainerApp {
+    .mainContainerAppNavLinks {
+      display: flex;
+      flex-direction: column;
+      .listContainer {
+        .desktop-view {
+          display: none;
+        }
+        .mobile-view {
+          display: flex;
+          justify-content: space-between;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 20px;
+            .logoContainerMobile {
+              display: flex;
+              justify-content: center;
+              background-color: $white;
+              margin-bottom: 12px;
+              z-index: 2000;
+              list-style: none;
+              .linkLogoMobile {
+                .navMenuLogoMobile {
+                  margin-left: 0px;
+                  img {
+                    width: 172px;
+                  }
+                }
+              }
+            }
+        } 
+      }
+    }
+    // .footer {
+    //   height: 100px;
+    //   .footerUs {
+    //     justify-content: center;
+    //     flex-direction: column;
+    //     display: flex;
+    //     font-size: 10px;
+    //     .footerUsA {
+    //       font-size: 10px;
+    //     }
+    //   }
+    // }
 
 
+
+    .footer {
+      display: none;
+    }
+    .footerMobile {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      background-color: $background;
+      .footerUsMobile {
+        margin-bottom: 0px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        text-align: center;
+        color: $text-colour1;
+        .footerUsAMobile {
+          font-size: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 10px;
+          color: $purple;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@include respond(tabletmini) {
+
+}
+@include respond(tablet) {
+
+  // background-color: indianred;
+  .mobile-view {
+    display: none;
+  }
+}
+@include respond(desktop) {
+  .mobile-view {
+    display: none;
+  }
+
+}
 
 
 

@@ -52,9 +52,6 @@ class Shuffle extends React.Component {
       return Math.random() - 0.5
     });
 
-    console.log(desordenadas, 'DESORDENADAS');
-
-
     this.setState({
       cards: desordenadas,
       active: false,
