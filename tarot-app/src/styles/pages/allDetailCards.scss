@@ -215,5 +215,147 @@
 			}
 		}
 	}
+}
 
+@include respond(tabletmini) {
+	.mainContainerAllCards {
+		.allDetailTextContainer {
+			.textTitleCards {
+
+			}
+		}
+		.buttonActiveOptions {
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0px;
+			display: none;
+		}
+		.viewAllCollectionTextContainer {
+			display: none;
+			.viewAllCollectionText {
+
+			}
+		}
+		.allCardsContainer {
+			.par {
+				display: flex;
+				flex-direction: column;
+				width: 100vw;
+				margin-top: 0px;
+				.imageCards {
+					width: 175px;
+					height: 240px;
+					margin: auto;
+					margin-bottom: 70px;
+				}
+				.textContainer {
+					width: 280px;
+					text-align: center;
+					width: 230px;
+					margin-left: 0px;
+					margin: auto;
+					.cardTitleName {
+						font-size: 22px;
+						font-family: $text-font2;
+					}
+					.cardDescription {
+						font-size: 14px;
+
+					}
+				}
+			}
+			.impar {
+				display: flex;
+				flex-direction: column;
+				width: 100vw;
+				margin-top: 0px;
+				.imageCards {
+					width: 175px;
+					height: 240px;
+					margin: auto;
+					margin-bottom: 70px;
+				}
+				.textContainer {
+					width: 280px;
+					text-align: center;
+					width: 230px;
+					margin-left: 0px;
+					margin: auto;
+					.cardTitleName {
+						font-size: 22px;
+						font-family: $text-font2;
+					}
+					.cardDescription {
+						font-size: 14px;
+						
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@include respond(tablet) {
+	.mainContainerAllCards {
+		.allDetailTextContainer {
+			.textTitleCards {
+
+			}
+		}
+		.buttonActiveOptions {
+			width: 80vw;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.viewAllCollectionTextContainer {
+			.viewAllCollectionText {
+
+			}
+		}
+		.allCardsContainer {
+			.par {
+				width: 600px;
+				.imageCards {
+					width: 200px;
+					height: 280px;
+				}
+				.textContainer {
+					.cardTitleName {
+						font-size: 26px;
+						font-family: $text-font2;
+					}
+					.cardDescription {
+						font-size: 18px;
+					}
+				}
+			}
+			.impar {
+				width: 600px;
+				// display: flex;
+				// flex-direction: column;
+				// width: 100vw;
+				// margin-top: 0px;
+				.imageCards {
+					width: 200px;
+					height: 280px;
+					// width: 175px;
+					// height: 240px;
+					// margin: auto;
+					// margin-bottom: 70px;
+				}
+				.textContainer {
+					.cardTitleName {
+						font-size: 26px;
+						font-family: $text-font2;
+					}
+					.cardDescription {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 }

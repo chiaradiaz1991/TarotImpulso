@@ -155,3 +155,137 @@
 		}
 	}
 }
+
+
+@include respond(tabletmini) {
+	.mainContainerHome {
+		height: auto;
+		display: flex;
+    flex-direction: column;
+		.imageContainer {
+			width: 100%;
+			margin-left: 0px;
+			margin-bottom: 0px;
+			height: 350px;
+			.frontImagesHome{
+				width: 290px;
+				height: 290px;
+				margin: auto;
+			}
+		}
+		.textContainer {
+			margin-right: 0px;
+			width: 100%;
+			padding-left: 30px;
+			padding-right: 30px;
+			.textDescription {
+				font-family: $text-font;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 20px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+			}
+			.textDescriptionBContainer {
+				margin-top: 0px;
+				justify-content: center;
+				.textDescriptionBContainerTexts {
+					.textDescriptionB {
+						font-family: $text-font;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 23px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						display: inline;
+					}
+				}
+				img {
+					display: none;
+				}
+			}
+			.buttonMainContainer {
+				margin-bottom: 130px;
+				display: flex;
+				justify-content: center;
+				.buttonContainer {
+					margin-top: 20px;
+					.linkHome {
+
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond(tablet) {
+	.mainContainerHome {
+		height: auto;
+		display: flex;
+    flex-direction: column;
+		.imageContainer {
+			width: 100%;
+			margin-left: 0px;
+			margin-bottom: 80px;
+			height: 350px;
+			.frontImagesHome{
+				width: 420px;
+				height: 420px;
+				margin: auto;
+			}
+		}
+		.textContainer {
+			margin-right: 0px;
+			width: 480px;
+			padding-left: 30px;
+			padding-right: 30px;
+			.textDescription {
+				font-family: $text-font;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 20px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.textDescriptionBContainer {
+				margin-top: 0px;
+				justify-content: center;
+				.textDescriptionBContainerTexts {
+					.textDescriptionB {
+						font-family: $text-font;
+						font-style: normal;
+						font-weight: 500;
+						font-size: 22px;
+						line-height: 23px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						display: inline;
+					}
+				}
+				img {
+					display: none;
+				}
+			}
+			.buttonMainContainer {
+				margin-bottom: 130px;
+				display: flex;
+				justify-content: center;
+				.buttonContainer {
+					margin-top: 20px;
+					.linkHome {
+
+					}
+				}
+			}
+		}
+	}
+}

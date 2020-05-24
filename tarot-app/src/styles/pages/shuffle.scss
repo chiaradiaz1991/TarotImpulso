@@ -134,13 +134,84 @@
       }
     }
   }
+}
 
+@include respond(tabletmini) {
+  .mainContainerShuffle {
+    height: 80vh;
+    .containerTitleShuffle {
+      margin-top: 70px;
+      .pickACard {
+        font-size: 20px;
+
+      }
+    }
+    .cardsContainerShuffle {
+      width: 100vw;
+      height: 300px;
+      .backSideContainer {
+        height: 170px;
+        width: 100%;
+        .card {
+          margin: 0;
+          height: 100%;
+        }
+      }
+      .cardSelectedContainerShuffle {
+
+      }
+    }
+    .buttonActiveContainer {
+      margin-top: 270px;
+      .buttonActive {
+
+      }
+      .buttonInactive {
+
+      }
+    }
+  }
 }
 
 
+@include respond(tablet) {
+  .mainContainerShuffle {
+    height: 80vh;
+    .containerTitleShuffle {
+      margin-top: 70px;
+      .pickACard {
+        font-size: 20px;
 
+      }
+    }
+    .cardsContainerShuffle {
+      // width: 100vw;
+      // height: 300px;
+      .backSideContainer {
+        // height: 170px;
+        // width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .card {
+          margin: 0;
+          // height: 100%;
+        }
+      }
+      .cardSelectedContainerShuffle {
 
+      }
+    }
+    .buttonActiveContainer {
+      margin-bottom: 150px;
+      .buttonActive {
 
+      }
+      .buttonInactive {
+
+      }
+    }
+  }
+}
 
 
 

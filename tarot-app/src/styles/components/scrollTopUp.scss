@@ -17,3 +17,12 @@
     }
   }
 }
+
+@include respond(tabletmini) {
+  .scroll {
+    .upButton{
+      right: 0;
+      margin: 20px -20px;
+    }
+  }
+}

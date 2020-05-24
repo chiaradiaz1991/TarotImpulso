@@ -107,40 +107,116 @@
 
 @include respond(tabletmini) { 
   .donateContainer {
+    margin-top: 70px;
+    .donateText {
+      width: 280px;
+      margin: auto;
+      font-size: 14px;
+    }
+    .containerLinks {
+      .likeProject {
+        font-size: 18px;
+      }
+      .donate-desktop {
+        display: none;
+      }
+      .donate-mobile {
+        .linksDonate {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .link {
+          }
+        }
+      }
+    }
+    .donateFooter {
+      margin-bottom: 140px;
+      .cards {
 
-     .donateText {
-
-     }
-     .containerLinks {
-
-       .likeProject {
-
-       }
-       .donate-desktop {
-         .linksDonate {
-
-           .link {
-           }
-         }
-       }
-       .donate-mobile {
-         display: none;
-       }
-     }
-     .donateFooter {
-
-       .cards{
-
-       }
-       .footerText {
-
-       }
-     }
-   }
-   
+      }
+      .footerText {
+        width: 280px;
+        margin: auto;
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 
+@include respond(tablet) { 
+  .donateContainer {
+    margin-top: 70px;
+    .donateText {
+      width: 560px;
+      margin: auto;
+      font-size: 16px;
+    }
+    .containerLinks {
+      .likeProject {
+        font-size: 22px;
+      }
+      .donate-mobile {
+        display: none;
+      }
+      .donate-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    .donateFooter {
+      margin-bottom: 140px;
+      .cards {
+
+      }
+      .footerText {
+        width: 560px;
+        margin: auto;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+@include respond(desktop) { 
+  .donateContainer {
+    margin-top: 170px;
+    .donateText {
+      width: 760px;
+      margin: auto;
+      font-size: 16px;
+    }
+    .containerLinks {
+      .likeProject {
+        font-size: 22px;
+      }
+      .donate-mobile {
+        display: none;
+      }
+      .donate-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+      }
+    }
+    .donateFooter {
+      // margin-bottom: 140px;
+      .cards {
+
+      }
+      .footerText {
+        // width: 560px;
+        // margin: auto;
+        font-size: 16px;
+      }
+    }
+  }
+}
 
 
 

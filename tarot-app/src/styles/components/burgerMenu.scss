@@ -5,10 +5,8 @@
   flex-direction: row;
   height: 100%;
   justify-content: flex-end;
-  // padding-right: 15px;
   width: 100%;
   padding: 0;
-  // margin: 0;
   position: relative;
   .iconBurgerMenu {
     img {
@@ -25,7 +23,6 @@
     flex-direction: column;
     list-style: none;
     left: 600;
-    // transform: translate(0, -50%);
     top: 30px;
     height: 40vh;
     z-index: 1000;
@@ -66,7 +63,6 @@
     display: flex;
     width: 100vw;
     transition: all .5s ease-in-out;
-    // transition-timing-function: cubic-bezier(.17,.67,.93,.45);
     flex-direction: column;
     list-style: none;
     background-color: $white;
@@ -93,6 +89,103 @@
         font-weight: bold;
         line-height: 26px;
         margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@include respond(tabletmini) {
+  .burgerMainContainer {
+    background-color: $white;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    .iconBurgerMenu {
+      img {
+        width: 22px;
+        height: 22px;
+      }
+      position: relative;
+      cursor: pointer;
+    }
+    .linksBurgerMenuContainer {
+      position: absolute;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      left: 600;
+      top: 30px;
+      height: 40vh;
+      z-index: 1000;
+      justify-content: space-around;
+      background-color: white;
+      .linksBurgerMenu {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $grey;
+        width: 85%;
+        .navMenuLinksBurger {
+          font-size: 18px;
+          color: $purple;
+          font-family: $text-font;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 26px;
+          margin-bottom: 10px;
+        }
+        .activeLinkBurger {
+          font-size: 18px;
+          color: $yellow;
+          font-family: $text-font;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 26px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  
+    .linksBurgerMenuContainerInactive {
+      z-index: 1000;
+      position: absolute;
+      left: -800px;
+      top:30px;
+      height: 40vh;
+      display: flex;
+      width: 100vw;
+      transition: all .5s ease-in-out;
+      flex-direction: column;
+      list-style: none;
+      background-color: $white;
+      justify-content: space-around;
+      .linksBurgerMenu {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $grey;
+        width: 85%;
+        .navMenuLinksBurger {
+          font-size: 18px;
+          color: $purple;
+          font-family: $text-font;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 26px;
+          margin-bottom: 10px;
+        }
+        .activeLinkBurger {
+          font-size: 18px;
+          color: $yellow;
+          font-family: $text-font;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 26px;
+          margin-bottom: 10px;
+        }
       }
     }
   }

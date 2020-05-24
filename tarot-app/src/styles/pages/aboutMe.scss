@@ -115,3 +115,92 @@
 }
 
 
+@include respond(tabletmini) { 
+  .aboutMeMainContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $background;
+    margin-top: 10px;
+    .leftContainer {
+      margin-right: 0px;
+      margin-top: -40px;
+      background-color: $background;
+      .imageAboutMeContainer {
+        .imageAboutMe {
+
+        }
+      }
+      .socialAboutMe {
+        a {
+          .socialAboutMeIcon {
+
+          }
+        }
+      }
+    }
+    .textAboutMe {
+      width: 261px;
+      text-align: center;
+      padding-bottom: 100px;
+      margin-top: 25px;
+      .myName {
+        font-size: 20px;
+      }
+      .presentation {
+        font-size: 14px;
+      }
+      .presentationTwo {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@include respond(tablet) { 
+  .aboutMeMainContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $background;
+    margin-top: 10px;
+    .leftContainer {
+      margin-right: 0px;
+      margin-top: -40px;
+      background-color: $background;
+      .imageAboutMeContainer {
+        .imageAboutMe {
+
+        }
+      }
+      .socialAboutMe {
+        a {
+          .socialAboutMeIcon {
+
+          }
+        }
+      }
+    }
+    .textAboutMe {
+      width: 560px;
+      text-align: center;
+      padding-bottom: 100px;
+      margin-top: 25px;
+      .myName {
+        font-size: 22px;
+      }
+      .presentation {
+        font-size: 16px;
+      }
+      .presentationTwo {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
