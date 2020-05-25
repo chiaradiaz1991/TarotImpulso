@@ -26,8 +26,9 @@ class AboutMe extends Component {
         </div>
         <div className="textAboutMe">
           <p className="myName">¡Hola, mi nombre es Chiara!✨</p>
-          <p className="presentation">Desde pequeña siempre me gusto expresarme a través del arte. En el momento en que obtuve mi título creativo publicitario fue cuando estuve en contacto con el arte en todas sus fases, desde la escultura, los dibujos y las películas. Dibujar fue un motor para conectarme conmigo de una manera muy valiosa y también fue una gran recepción positiva de mi entorno. Hoy en día trabajo como desarrolladora web, pero una gran parte de mí tiene pasión por la ilustración gracias a mi madre, que es un artista que admiro mucho.</p>
-          <p className="presentationTwo">🔮 Así nacio este proyecto. El universo es un gran generador de eventos necesarios para nuestra propia evolución y tratar de exprimir el jugo es clave. Todo esta perfectamente ordenado para que sea lo que tenga que ser. Cada situación/persona que se nos presenta, es un IMPULSO para surfear la vida.</p>
+          <p className="presentation">Desde pequeña siempre me gustó expresarme a través del arte. En el momento en que obtuve mi título de Creativa Publicitaria, fue cuando estuve en contacto con el arte en todas sus fases, desde la escultura, pintura, ilustración, cine, etc. Ilustrar fue y es un motor para conectarme conmigo de una manera muy valiosa. Hoy en día trabajo como programadora web, pero una gran parte de mí tiene pasión por la ilustración gracias a mi mamá, que es una artista que admiro mucho.</p>
+          <p className="presentationTwo">🔮 Así nació este proyecto, Tarot Impulso. El universo es un gran generador de eventos necesarios para nuestra propia evolución y tratar de exprimir el jugo es clave. Todo esta perfectamente ordenado para que sea lo que tenga que ser. Cada situación/persona que se nos presenta, es un IMPULSO para surfear la vida.</p>
+          <p className="presentationTwo">Si querés escribirme un e-mail podes hacerlo a ✉️ chiara.diaz1991@gmail.com</p>
         </div>
       </div>
     )

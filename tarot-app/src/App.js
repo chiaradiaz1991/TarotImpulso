@@ -83,11 +83,12 @@ const App = () => {
           </Router>
         </div>
         <div className="footer">
-          <p className="footerUs">Esta página fue desarrollada por&nbsp;<a href="https://www.github.com/chiaradiaz1991" target="_blank" className="footerUsA">Chiara Diaz&nbsp;</a>y diseñada por&nbsp;<a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA">Deandra Delgado</a>&nbsp;con 💖</p>
+          <p className="footerUs">Esta página fue desarrollada por&nbsp;<a href="https://chiaradiaz.com" target="_blank" className="footerUsA">Chiara Diaz&nbsp;</a>y diseñada por&nbsp;<a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA">Deandra Delgado</a>&nbsp;con 💖.&nbsp;®️ All rights reserved</p>
         </div>
         <div className="footerMobile">
-          <p className="footerUsMobile">Esta página fue desarrollada por&nbsp;<a href="https://www.github.com/chiaradiaz1991" target="_blank" className="footerUsAMobile">Chiara Diaz&nbsp;</a></p>
+          <p className="footerUsMobile">Esta página fue desarrollada por&nbsp;<a href="https://chiaradiaz.com" target="_blank" className="footerUsAMobile">Chiara Diaz&nbsp;</a></p>
           <p className="footerUsMobile">diseñada por&nbsp;<a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsAMobile">Deandra Delgado</a></p>
+          <p className="footerUsMobile">®️ All rights reserved</p>
         </div>
       </div>
     </>
