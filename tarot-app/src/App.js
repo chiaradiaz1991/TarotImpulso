@@ -32,10 +32,10 @@ const App = () => {
                   <ul>
                     <div className="logoContainer" >
                       <li className="links">
-                        <Link to="/" className="navMenuLinks"><img src={logo} alt="logo" /></Link>
+                        <Link to="/" className="navMenuLinks"><img src={logo} alt="" /></Link>
                       </li>
                     </div>
-                    <div className="otherLinks">
+                    <div className="otherLinks" role="navigation">
                       <li className="links">
                         <NavLink to="/all-cards" className="navMenuLinks" activeClassName="activeLink">Cartas</NavLink>
                       </li>

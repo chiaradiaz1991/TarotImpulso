@@ -5,7 +5,7 @@ import CreditCardsImage from '../../assets/credit-Cards.svg';
 class Donate extends Component {
   render() {
     return (
-      <div className="donateContainer">
+      <div className="donateContainer" role="main">
         <p className="donateText">Amo programar y para desarrollar ésta web e ilustrar el mazo de cartas</p>
         <p className="donateText">invertí un monton de tiempo y energía ⚡👩🏽‍💻</p>
         <div className="containerLinks">
@@ -69,7 +69,7 @@ class Donate extends Component {
           </div>
         </div>
         <div className="donateFooter">
-          <img src={CreditCardsImage} alt="footer-cards" className="cards" />
+          <span aria-hidden="true" role="presentation"><img src={CreditCardsImage} alt="Payment methods: Mastercard, Visa and American Express" className="cards" /></span>
           <p className="footerText">Y si no podés donar, estoy muy contenta que estés acá 💜</p>
         </div>
       </div>

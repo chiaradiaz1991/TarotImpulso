@@ -288,19 +288,19 @@ class Shuffle extends React.Component {
   render() {
     const { cards, active, card, description } = this.state;
     return (
-      <div className="mainContainerShuffle">
+      <div className="mainContainerShuffle" role="main">
         <div className="containerTitleShuffle">
           {active == false && (
-            <p className="pickACard">Elegí tu carta del día</p>
+            <h1 className="pickACard">Elegí tu carta del día</h1>
           )}
         </div>
         <div className="cardsContainerShuffle">
           {
             active === false && (
               <div className="backSideContainer">
-                <img className="card" id="one" src={backImage} onClick={() => this.cardName(0)} />
-                <img className="card" id="two" src={backImage} onClick={() => this.cardName(1)} />
-                <img className="card" id="three" src={backImage} onClick={() => this.cardName(2)} />
+                <img className="card" id="one" src={backImage} alt="select card 1" tabindex="0" t role="button" onClick={() => this.cardName(0)} onKeyPress={(e)=> (e.key === 'Enter' ? this.cardName(0):'')} />
+                <img className="card" id="two" src={backImage} alt="select card 2" tabindex="0" t role="button" onClick={() => this.cardName(1)} onKeyPress={(e)=> (e.key === 'Enter' ? this.cardName(1):'')} />
+                <img className="card" id="three" src={backImage} alt="select card 3" tabindex="0" t role="button" onClick={() => this.cardName(2)} onKeyPress={(e)=> (e.key === 'Enter' ? this.cardName(2):'')} />
               </div>
             )
           }

@@ -11,9 +11,9 @@ import {
 class AllDetailCards extends Component {
   render() {
     return (
-      <div className="mainContainerAllCards">
+      <div className="mainContainerAllCards" role="main">
         <div className="allDetailTextContainer">
-          <p className="textTitleCards">ARCANOS MAYORES</p>
+          <h1 className="textTitleCards">ARCANOS MAYORES</h1>
         </div>
         <div className="buttonActiveOptions">
           {
@@ -28,7 +28,7 @@ class AllDetailCards extends Component {
         <div className="allCardsContainer">
           {images.map(({ id, src, title, description }) =>
             <div className={id % 2 === 0 ? 'par' : 'impar'}>
-              <img key={id} src={src} id={id} className="imageCards" />
+              <img key={id} src={src} id={id} className="imageCards" alt="" />
               <div className="textContainer">
                 <p className="cardTitleName">{title}</p>
                 <p className="cardDescription">{description}</p>

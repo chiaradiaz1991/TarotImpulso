@@ -10,9 +10,9 @@ import Cards from '../../assets/Cartas.png';
 class HomePage extends Component {
   render() {
     return (
-      <div className="mainContainerHome">
+      <div className="mainContainerHome" role="main">
         <div className="imageContainer">
-          <img src={Cards} alt="cards-desktop" className="frontImagesHome" />
+          <img src={Cards} alt="" className="frontImagesHome" />
         </div>
         <div className="textContainer">
           <p className="textDescription">
@@ -24,7 +24,7 @@ class HomePage extends Component {
               <p className="textDescriptionB">Me alegro que estés acá</p>
               <p className="textDescriptionB">¿Querés poner a prueba el azar?</p>
             </div>
-            <img src={imageBall} atl="image" />
+            <img src={imageBall} atl="" />
           </div>
           <div className="buttonMainContainer">
             <div className="buttonContainer">
