@@ -5,7 +5,7 @@ import image18 from '../../assets/image18.jpg';
 import image09 from '../../assets/image09.jpg';
 import { Link } from "react-router-dom";
 import imageBall from '../../assets/ball.png';
-import Cards from '../../assets/CardsDesktop.svg';
+import Cards from '../../assets/Cartas.png';
 
 class HomePage extends Component {
   render() {

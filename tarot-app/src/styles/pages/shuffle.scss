@@ -56,6 +56,8 @@
   display: flex;
   justify-content: center;
   .buttonActive {
+    border: none;
+    align-items: center;
     width: 180px;
     height: 44px;
     background: $violet;
@@ -127,7 +129,7 @@
     .buttonActiveContainer {
       margin-top: 360px;
       .buttonActive {
-
+        border: none;
       }
       .buttonInactive {
 
@@ -167,7 +169,7 @@
     .buttonActiveContainer {
       margin-top: 360px;
       .buttonActive {
-
+        border: none;
       }
       .buttonInactive {
 
@@ -203,7 +205,7 @@
       margin-top: 20px;
       margin-bottom: 170px;
       .buttonActive {
-
+        border: none;
       }
       .buttonInactive {
 
