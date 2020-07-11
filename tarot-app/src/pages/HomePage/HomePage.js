@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import image14 from '../../assets/image14.jpg';
-import image17 from '../../assets/image17.jpg';
-import image18 from '../../assets/image18.jpg';
-import image09 from '../../assets/image09.jpg';
 import { Link } from "react-router-dom";
 import imageBall from '../../assets/ball.png';
 import Cards from '../../assets/Cartas.png';
