@@ -24,7 +24,7 @@ class AboutMe extends Component {
               </a>
             </span>
             <span aria-hidden="true" role="presentation">
-              <a href="https://www.instagram.com/creativitychiara/" target="_blank" aria-label="go to/visit my Instagram">
+              <a href="https://www.instagram.com/chiarailustra/" target="_blank" aria-label="go to/visit my Instagram">
                 <img src={Instagram} alt="" className="socialAboutMeIcon" />
               </a>
             </span>
