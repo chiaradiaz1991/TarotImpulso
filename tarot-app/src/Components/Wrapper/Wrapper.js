@@ -1,10 +1,10 @@
 
 import React from 'react';
 
-const Wrapper = (props) => {
+const Wrapper = ({children}) => {
   return (
     <div className="wrapperContainer">
-      {props.children}
+      {children}
     </div>
   )
 }
