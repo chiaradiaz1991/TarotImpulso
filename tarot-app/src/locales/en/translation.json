@@ -1,0 +1,82 @@
+{
+  "home-page": {
+    "nav-link" : {
+      "cards" : "Cards",
+      "about-me": "About me",
+      "donate": "Donate"
+    },
+    "content": {
+      "message": "The Universe has a unique message for you in this moment of your life, wherever it comes from you should believe it, take action to push yourself and move forward towards where you want to be tomorrow.",
+      "glad": "I am glad you are here.",
+      "randomness": "Do you want to give it a try?",
+      "throw": "Draw a card",
+      "throw-another": "Draw another",
+      "choose": "CHOOSE YOUR CARD OF THE DAY"
+    }
+  },
+  "cards": {
+    "major-arcana": "MAJOR ARCANA CARDS",
+    "all-collection": "Check the entire collection",
+    "magician": "I. The Magician (Le Bateleur)",
+    "magician-content": "Despite everyday banalities, the magician shows you there are other more important things. This is the Major Arcana first card, so it represents a special power. The winners are the ones who go for it! The magician brings courage, you have everything it takes for this moment.",
+    "popess": "II. The Popess (La Papesse)",
+    "popess-content": "Mysterious and still. It is a card that pushes observation over action and introspection over expansion. Regarding love, it can be undiscovered feelings. A great knowledge carrier. It is a source of spiritual energy empowering people. If you feel unfulfilled, you have two paths: you can increase your effort to achieve what you cradle or reconsider your goals. This woman represents the bridge between conscious and unconscious. If we move toward our conscious mind, we will reach our unconscious",
+    "empress": "III. The Empress (L'Impératrice)",
+    "empress-content":"The Empress helps communication between loved ones, which allows intimacy and careness as a result. She is also a symbol of fertility. A way to the unknown.",
+    "emperor": "IIII. The Emperor (L'Empereur)",
+    "emperor-content": "Armony and consideration to other people. It represents a moment of stability, mainly in complex situations. Authority. It also tells you not to settle just with the idea of it, go sacrifice a few afternoons and build something. Commitment. Inspire yourself in the Emperor.",
+    "pope": "V. The Pope (Le Pape)",
+    "pope-content": "The Pope symbolizes wiseness and maturity. It is a card that listens and gives everyone good advice. Faith, it doesn’t have to be a religious one, just faith. Spiritual life.",
+    "lover": "VI. The Lover (L'Amoureux)",
+    "lover-content": "The Lovers represents two paths: a past and a future one. Important decision making. Progress. It is also a card that can represent the inconsistency as it cannot decide for a unique path.",
+    "chariot": "VII. The Chariot (Le Chariot)",
+    "chariot-content": "The Chariot points that uncertainty and instability will come to an end. Movement. It has a powerful energy to keep the course. It calls for activities bringing new experiences. Traveling is the most natural of them. This card can be a great push if you are already thinking about the trip but you haven’t gone for it yet.",
+    "justice": "VIII. Justice (La Justice)",
+    "justice-content": "The Justice promotes morality above all. The message it gives is: what it is, it is. It brings balance to relationships. This is the guardian of stability. It emphasizes the caution in every action and every word. The sword is a symbol of respect to order or warn. The Justice always will make decisions carefully and not based on intuition, instinct or emotions. It brings wiseness. This card gives the entity to true values, absolute balance of good and bad forces like the Yin and Yang.",
+    "hermit": "VIIII. The Hermit (L'Ermite)",
+    "hermit-content": "The Hermit symbolizes loneliness and own retract (voluntary or not). It opens way for autodiscipline and focus on relationships. The Loner is a wise man living in reclusion. It devotes to meditation and contemplation. He is interested mainly in the past. He enlightens old thoughts. Immerse yourself in your memories and think about what you have better and worse handled. Meditate. It is the moment to face ourselves in order to bring the light.",
+    "wheel": "X. The Wheel of Fortune (La Roue de Fortune)",
+    "wheel-content": "The Fortune Wheel spins through luck and fortune. Drastic changes. Opportunities that present themselves. The future is upwards. Shows how our life cycle is unstable. Happiness is just a matter of pure coincidence. Careful! Aleatory luck can be very unstable.",
+    "strength": "XI. Strength (La Force)",
+    "strength-content": "Strength represents courage. This card is able to rediscover powerful love feelings or consolidate current relations. It allows you to go on despite all the fatigue. It represents a strong woman able to get a wild animal on her side. She has huge passion and power. Motivation will come as a consequence of a big inner desire. The strength also proposes to heal.",
+    "hanged": "XII. The Hanged Man (Le Pendu)",
+    "hanged-content": "This card symbolizes submission and obedience through the way the head is upside down in the picture. It can be someone that deserves punishment and has to suffer and hold consequences of their actions. We have here someone stubborn, probably a revel that lives by their own rules. His posture means retrospection and also a perception change of time and space. Now start looking everything from a different perspective.",
+    "death": "XIII. Death (La Mort)",
+    "death-content": "Every inner process comes with a symbolic “death” and the resurrection of a new me. This is the Arcana with no name because in Tarot the symbolism cannot be defined with words. To let things go, gives room for something new.",
+    "temperance": "XIIII. Temperance (Tempérance)",
+    "temperance-content": "This card represents harmony, reconciliation. The world and our actions are tied together. This card is a good guide to think about balance on our actions.",
+    "devil": "XV. The Devil (Le Diable)",
+    "devil-content": "The Devil wakes up the strongest instincts and deepest impulses. Despite its satanic looks, it can be a card that promotes good work thanks to its great energy. This card can be a revelation of a true anarchy that can take over your life with ease.",
+    "tower": "XVI. The Tower (La Maison Dieu)",
+    "tower-content": "The Tower does not only represent negativity but also proposes a rebirth after grieve and suffering. Not everything that collapses is bad. It is a symbol of a perfect reconstruction work, but it is still in ruin due to greed and pride of its constructors. The Tower purifies Ego.",
+    "star": "XVII. The Star (L'Étoile)",
+    "star-content": "Soul liberation. The Star is protective of the future and symbol of harmony, it sums all crucial ingredients so that the change is as easy and beneficial as possible. It vouches for romance and provokes the intimacy in life.",
+    "moon": "XVIII. The Moon (La Lune)",
+    "moon-content": "The Moon is the brightest in our dark night. It represents the warmth of home, the nostalgia, memories and being tied to our past. The Moon is not a source of energy like the Sun, it just receives and reflects the shine that gets to it; that’s why it is a symbol of passivity. Everything we see at the surface is a matter of a far past.",
+    "sun": "XVIIII. The Sun (Le Soleil)",
+    "sun-content": "The Sun represents the innocence of our youngest years. This is the peak of individuality, the age of highest spirit and soul conjuncy. This great inner experience is only comparable with the most impressive outer experience that ever occurred, the Sun.",
+    "judgement": "XX. Judgement (Le Jugement)",
+    "judgement-content": "The Trial can announce a change, a favorable result of a long time project. It has a big spiritual weight to it. Long due plans will come along. In this situation, logic is the best guide.",
+    "world": "XXI. The World (Le Monde)",
+    "world-content": "The World. A very special card because it symbolizes perfection of creation and success of all living beings. It is a sign of true satisfaction is on the way and you will be rewarded for your hard work. The World is the culmination of intense efforts and reminds of the long way. The goal achievement. The universe is on your side.",
+    "fool": "The Fool (Le Mat)",
+    "fool-content": "The Fool represents living without ambition or goals. It symbolizes to abandon the comfort and sail to the unknown. Totally free from desires like prosperity and richness. True values are immediate experience. It can help you to let old patterns or prejudgements go. Try to look at the world in an impartial way like the Crazy and discover new and unknown details.",
+    "collection-complete": "COMPLETE COLLECTION"
+  },
+  "about-me": {
+    "name": "Hi there! I'm Chiara✨",
+    "content-a": "Since I was a child, I always loved to express myself through art. When I got my Advertisement Creative degree, I was in contact with art on all its phases, from sculpture to painting and movies. Drawing have been a driver to connect with myself in a very valuable way and also a big reception from my loved ones. Nowadays I work as a Web Developer, but a big part of me lives for illustration thanks to my mother, who is an artist I very much admire.",
+    "content-b": "🔮 That's how this project was born. The Universe is a great source of events required for our own evolution and to try and get the most out of it is key. Everything is perfectly ordered to be what it is meant to be. Every situation and person we cross our paths with is an impulse to surf life.",
+    "email": "In case you want to contact me, this is my email address ✉️ chiara.diaz1991@gmail.com",
+    "special-mention": "I want to thank Deandra Delgado, a very special friend, who is not only an beautiful person but algo an excellent professional. She designed this website. If you want to see more of her work, please go to the link in the footer.💜"
+  },
+  "donate": {
+    "love-what-I-do": "To develop this website and illustrate the cards deck, I invested a lot of time and energy.",
+    "how-to": "If you liked this project, you can show your appreciation in these links 👇"
+  },
+  "footer": {
+    "developed": "This website was developed by ",
+    "designed": " designed by ",
+    "rights": " with 💖. ®️ All rights reserved"
+  }
+}

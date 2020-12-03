@@ -1,16 +1,16 @@
 import React from "react";
 import CreditCardsImage from "../../assets/credit-Cards.svg";
+import { withNamespaces } from "react-i18next";
 
-const Donate = () => {
+const Donate = ({ t }) => {
   return (
     <div className="donateContainer" role="main">
       <p className="donateText">
-        Amo programar y para desarrollar ésta web e ilustrar el mazo de cartas
+         {t("donate.love-what-I-do")}
       </p>
-      <p className="donateText">invertí un monton de tiempo y energía ⚡👩🏽‍💻</p>
       <div className="containerLinks">
         <p className="likeProject">
-          Si te gustó este proyecto podes donar mediante los siguientes links 👇
+          {t("donate.how-to")}
         </p>
         <div className="donate-desktop">
           <div className="linksDonate">
@@ -202,12 +202,9 @@ const Donate = () => {
             className="cards"
           />
         </span>
-        <p className="footerText">
-          Y si no podés donar, estoy muy contenta que estés acá 💜
-        </p>
       </div>
     </div>
   );
 };
 
-export default Donate;
+export default withNamespaces()(Donate);

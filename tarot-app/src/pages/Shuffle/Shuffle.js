@@ -24,6 +24,8 @@ import image22 from "../../assets/image13.png";
 import backImage from "../../assets/back.png";
 import Card from "../../Components/Card/Card";
 import data from "../../data";
+import { withNamespaces } from "react-i18next";
+
 
 const IMAGES = [
   image1,
@@ -49,7 +51,7 @@ const IMAGES = [
   image22,
 ];
 
-const Shuffle = () => {
+const Shuffle = ({ t }) => {
   const [cards, setCards] = useState(IMAGES);
   const [active, setActive] = useState(false);
   const [card, setCard] = useState();
@@ -85,6 +87,7 @@ const Shuffle = () => {
         text = description(selectedCard);
         break;
     }
+    console.log({text})
     setDescriptionCard(text);
     setCard(selectedCard);
     setActive(true);
@@ -92,8 +95,8 @@ const Shuffle = () => {
 
   const description = (card) => {
     let contentCard = {
-      title: "",
-      description: "",
+      title: t(""),
+      description: t(""),
     };
     switch (card) {
       case image1:
@@ -188,7 +191,7 @@ const Shuffle = () => {
         data.map((item, i) => {
           if (item.id === 12) {
             contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.description = t(item.description);
           }
         });
         break;
@@ -287,7 +290,7 @@ const Shuffle = () => {
     <div className="mainContainerShuffle" role="main">
       <div className="containerTitleShuffle">
         {active == false && (
-          <h1 className="pickACard">Elegí tu carta del día</h1>
+          <h1 className="pickACard">{t("home-page.content.choose")}</h1>
         )}
       </div>
       <div className="cardsContainerShuffle">
@@ -338,11 +341,12 @@ const Shuffle = () => {
           className={active ? "buttonActive" : "buttonInactive"}
           onClick={() => handleSuffle()}
         >
-          Tirá otra
+          {t("home-page.content.throw-another")}
         </button>
       </div>
     </div>
   );
 };
 
-export default Shuffle;
+export default withNamespaces()(Shuffle);
+

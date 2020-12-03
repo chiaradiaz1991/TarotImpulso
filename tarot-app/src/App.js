@@ -1,26 +1,27 @@
-
-import React from 'react';
-import AllDetailCards from './pages/AllDetailCards/AllDetailCards';
-import HomePage from './pages/HomePage/HomePage';
-import Shuffle from './pages/Shuffle/Shuffle';
-import DetailCard from './pages/AboutMe/AboutMe';
-import Donate from './pages/Donate/Donate';
-import Wrapper from './Components/Wrapper/Wrapper';
-import BurgerMenu from './Components/BurgerMenu/BurgerMenu';
+import React from "react";
+import AllDetailCards from "./pages/AllDetailCards/AllDetailCards";
+import HomePage from "./pages/HomePage/HomePage";
+import Shuffle from "./pages/Shuffle/Shuffle";
+import DetailCard from "./pages/AboutMe/AboutMe";
+import Donate from "./pages/Donate/Donate";
+import Wrapper from "./Components/Wrapper/Wrapper";
+import BurgerMenu from "./Components/BurgerMenu/BurgerMenu";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  NavLink
+  NavLink,
 } from "react-router-dom";
-import logo from '../src/assets/Logo.svg'
-import AllCollection from './pages/AllCollection/AllCollection';
+import logo from "../src/assets/Logo.svg";
+import AllCollection from "./pages/AllCollection/AllCollection";
+import { withNamespaces } from "react-i18next";
+import i18n from "./i18n";
 
-
-
-
-const App = () => {
+const App = ({ t }) => {
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <>
       <div className="mainContainerApp">
@@ -30,28 +31,67 @@ const App = () => {
               <div className="listContainer">
                 <div className="desktop-view">
                   <ul>
-                    <div className="logoContainer" >
+                    <div className="logoContainer">
                       <li className="links">
-                        <Link to="/" className="navMenuLinks"><img src={logo} alt="" /></Link>
+                        <Link to="/" className="navMenuLinks">
+                          <img src={logo} alt="" />
+                        </Link>
                       </li>
                     </div>
                     <div className="otherLinks" role="navigation">
                       <li className="links">
-                        <NavLink to="/all-cards" className="navMenuLinks" activeClassName="activeLink">Cartas</NavLink>
+                        <NavLink
+                          to="/all-cards"
+                          className="navMenuLinks"
+                          activeClassName="activeLink"
+                        >
+                          {t("home-page.nav-link.cards")}
+                        </NavLink>
                       </li>
                       <li className="links">
-                        <NavLink to="/about-me" className="navMenuLinks" activeClassName="activeLink">Sobre Mí</NavLink>
+                        <NavLink
+                          to="/about-me"
+                          className="navMenuLinks"
+                          activeClassName="activeLink"
+                        >
+                          {t("home-page.nav-link.about-me")}
+                        </NavLink>
                       </li>
                       <li className="links">
-                        <NavLink to="/donate" className="navMenuLinks" activeClassName="activeLink">Donar</NavLink>
+                        <NavLink
+                          to="/donate"
+                          className="navMenuLinks"
+                          activeClassName="activeLink"
+                        >
+                          {t("home-page.nav-link.donate")}
+                        </NavLink>
+                      </li>
+                      <li className="links">
+                        <div className="localizationInnerContainer">
+                          <button
+                            className="localizationButton"
+                            onClick={() => changeLanguage("es")}
+                          >
+                            ES
+                          </button>
+                          <span className="localizationDiv">/</span>
+                          <button
+                            className="localizationButton"
+                            onClick={() => changeLanguage("en")}
+                          >
+                            EN
+                          </button>
+                        </div>
                       </li>
                     </div>
                   </ul>
                 </div>
                 <div className="mobile-view">
-                  <div className="logoContainerMobile" >
+                  <div className="logoContainerMobile">
                     <li className="linkLogoMobile">
-                      <Link to="/" className="navMenuLogoMobile"><img src={logo} alt="logo" /></Link>
+                      <Link to="/" className="navMenuLogoMobile">
+                        <img src={logo} alt="logo" />
+                      </Link>
                     </li>
                   </div>
                   <div className="burgerMenuContent">
@@ -83,19 +123,60 @@ const App = () => {
           </Router>
         </div>
         <div className="footer">
-          <p className="footerUs">Esta página fue desarrollada por&nbsp;<a href="https://chiaradiaz.com" target="_blank" className="footerUsA">Chiara Diaz&nbsp;</a>y diseñada por&nbsp;<a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsA">Deandra Delgado</a>&nbsp;con 💖.&nbsp;®️ All rights reserved</p>
+          <p className="footerUs">
+            {t("footer.developed")}
+            {"\u00A0"}
+            <a
+              href="https://chiaradiaz.com"
+              target="_blank"
+              className="footerUsA"
+              rel="noopener noreferrer"
+            >
+              Chiara Diaz&nbsp;
+            </a>
+            {t("footer.designed")} {"\u00A0"}
+            <a
+              href="https://www.behance.net/DeandraDelgado"
+              target="_blank"
+              className="footerUsA"
+              rel="noopener noreferrer"
+            >
+              Deandra Delgado&nbsp;
+            </a>
+            {t("footer.rights")} {"\u00A0"}
+          </p>
         </div>
         <div className="footerMobile">
-          <p className="footerUsMobile">Esta página fue desarrollada por&nbsp;<a href="https://chiaradiaz.com" target="_blank" className="footerUsAMobile">Chiara Diaz&nbsp;</a></p>
-          <p className="footerUsMobile">diseñada por&nbsp;<a href="https://www.behance.net/DeandraDelgado" target="_blank" className="footerUsAMobile">Deandra Delgado</a></p>
-          <p className="footerUsMobile">®️ All rights reserved</p>
+          <p className="footerUsMobile">
+            {t("footer.developed")} {"\u00A0"}
+            <a
+              href="https://chiaradiaz.com"
+              target="_blank"
+              className="footerUsAMobile"
+              rel="noopener noreferrer"
+            >
+              Chiara Diaz&nbsp;
+            </a>
+          </p>
+          <p className="footerUsMobile">
+            {t("footer.designed")} {"\u00A0"}
+            <a
+              href="https://www.behance.net/DeandraDelgado"
+              target="_blank"
+              className="footerUsAMobile"
+              rel="noopener noreferrer"
+            >
+              Deandra Delgado&nbsp;
+            </a>
+          </p>
+          <p className="footerUsMobile">
+            {t("footer.rights")}
+            {"\u00A0"}
+          </p>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default App;
-
-
-
+export default withNamespaces()(App);
