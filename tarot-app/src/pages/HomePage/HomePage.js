@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import imageBall from "../../assets/ball.png";
 import Cards from "../../assets/Cartas.png";
+import { withNamespaces } from "react-i18next";
 
-const HomePage = () => {
+const HomePage = ({ t }) => {
   return (
     <div className="mainContainerHome" role="main">
       <div className="imageContainer">
@@ -11,23 +12,20 @@ const HomePage = () => {
       </div>
       <div className="textContainer">
         <p className="textDescription">
-          El universo tiene un mensaje único para vos en este momento de tu
-          vida, venga de donde venga debes creerlo y ponerlo en sintonía con tu
-          realidad, tomar acción para impulsarte y avanzar hacia ese punto en
-          donde queres estar mañana.
+        {t("home-page.content.message")} 
         </p>
         <span />
         <div className="textDescriptionBContainer">
           <div className="textDescriptionBContainerTexts">
-            <p className="textDescriptionB">Me alegro que estés acá</p>
-            <p className="textDescriptionB">¿Querés poner a prueba el azar?</p>
+            <p className="textDescriptionB">{t("home-page.content.glad")}</p>
+            <p className="textDescriptionB">{t("home-page.content.randomness")}</p>
           </div>
           <img src={imageBall} atl="" />
         </div>
         <div className="buttonMainContainer">
           <div className="buttonContainer">
             <Link to="/shuffle" className="linkHome">
-              Tirar cartas
+            {t("home-page.content.throw")}
             </Link>
           </div>
         </div>
@@ -36,4 +34,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default withNamespaces()(HomePage);

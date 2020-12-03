@@ -22,13 +22,18 @@ import image21 from './assets/image21.png';
 import image22 from './assets/mat.png';
 
 
+import i18n from '../src/i18n';
+
 const data = [
     { id: 1,
       romanNumber: "I",
       src: image01,
-      title: 'I. El Mago (Le Bateleur)',
-      title2: 'El Mago (Le Bateleur)',
-      description: 'A pesar de las banalidades del día a día, ésta carta te muestra que hay otras cosas más importantes. Es el primero de los Arcanos Mayores, por lo que presenta una fuerza especial. Tenés todo lo necesario para este momento. Los elementos que ves en la mesa simbolizan sus conocimientos y sabiduría. ¡Quien se atreve, gana!',
+      title: i18n.t('cards.magician'),
+      // title: 'I. El Mago (Le Bateleur)',
+      title2: i18n.t('cards.magician'),
+      // title2: 'El Mago (Le Bateleur)',
+      description: i18n.t('cards.magician-content'),
+      // description: 'A pesar de las banalidades del día a día, ésta carta te muestra que hay otras cosas más importantes. Es el primero de los Arcanos Mayores, por lo que presenta una fuerza especial. Tenés todo lo necesario para este momento. Los elementos que ves en la mesa simbolizan sus conocimientos y sabiduría. ¡Quien se atreve, gana!',
     },
     { id: 2,
       romanNumber: "II",
@@ -181,3 +186,4 @@ const data = [
   
 
   export default data;
+  // export default withTranslation('data')(data)

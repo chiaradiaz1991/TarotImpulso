@@ -1,0 +1,80 @@
+{
+  "home-page": {
+    "nav-link": {
+      "cards": "Cartas",
+      "about-me": "Sobre mi",
+      "donate": "Donar"
+    },
+    "content": {
+      "message": "El universo tiene un mensaje único para vos en este momento de tu vida, venga de donde venga debes creerlo y ponerlo en sintonía con tu realidad, tomar acción para impulsarte y avanzar hacia ese punto en donde queres estar mañana.",
+      "glad": "Me alegro que estés acá",
+      "randomness": "¿Querés poner a prueba el azar?",
+      "throw": "Tirar cartas"
+    }
+  },
+  "cards": {
+    "major-arcana": "ARCANOS MAYORES",
+    "all-collection": "Ver toda la colección",
+    "magician": "I. El Mago (Le Bateleur)",
+    "magician-content": "A pesar de las banalidades del día a día, ésta carta te muestra que hay otras cosas más importantes. Es el primero de los Arcanos Mayores, por lo que presenta una fuerza especial. Tenés todo lo necesario para este momento. Los elementos que ves en la mesa simbolizan sus conocimientos y sabiduría. ¡Quien se atreve, gana!",
+    "popess": "II. La Sacerdotisa (La Papesse)",
+    "popess-content": "Inmóvil y misteriosa. Es una carta que invita a la observación por sobre la acción. La introspección sobre la expansión. La sacerdotiza es una gran portadora de conocimiento. Si te sentís insatisfechx, tenes dos caminos: podes aumentar tu esfuerzo para lograr lo que quieras o reconsiderar tus objetivos. Su energía es un puente entre el inconsciente y el consciente.",
+    "empress": "III. La Emperatriz (L'Impératrice)",
+    "empress-content":"La Emperatriz ayuda a la comunicación entre nosotrxs y nuestrxs afectos. Esta carta fomenta la intimidad, por otro lado, también simboliza la fertilidad. El camino hacia lo Desconocido.",
+    "emperor": "IV. El Emperador (L'Empereur)",
+    "emperor-content": "Dominio de la mente por sobre el corazón. El Emperador representa poder y autoridad. Un momento de estabilidad, sobre todo en situaciones complejas. Te invita a que disfrutes de lo material y sacrifiques algunas tardes para construir algo. Esta carta nos habla de la autodisciplina. ¡Inspirate en el Emperador!",
+    "pope": "V. El Papa (Le Pape)",
+    "pope-content": "El Papa simboliza la sabiduría y la madurez. Es una carta que escucha bien y brinda buenos consejos a todos. FE (no tiene que ser una fe religiosa). Esta carta trae una energía poderosamente espiritual.",
+    "lover": "VI. Los Enamorados (L'Amoureux)",
+    "lover-content": "Los enamorados te muestran dos caminos, pasado o futuro. Viene de la mano con alguna decisión importante. También es una carta que puede representar la inconstancia, especialmente porque no puede decidir por un camino. Su energía te invita a listar tus prioridades, volver a evaluar todo para elegir con que camino seguir adelante.",
+    "chariot": "VII. El Carro (Le Chariot)",
+    "chariot-content": "El carro indica movimiento, el fin de las incertidumbres y la inestabilidad. Tiene una poderosa energía para sostener las riendas y fomenta actividades que te dan nuevas experiencias (viajar puede ser una de ellas). Esta carta puede ser un gran impulso si venis pensando en algo y no te animas.",
+    "justice": "VIII. La Justicia (La Justice)",
+    "justice-content": "La justicia es una carta que promueve la MORALIDAD por sobre todo. Te quiere decir que lo que es, ES. Trae balance. Pone un énfasis en el cuidado de cada acción y cada palabra. La espada es un símbolo de respeto para ordenar o dar advertencia. La energía de La Justicia te ayuda a tomar decisiones cuidadosamente y no en base a la intuición (como La Luna).",
+    "hermit": "IX. El Ermitaño (L'Ermite)",
+    "hermit-content": "El Ermitaño simboliza la soledad y el retiro. Abre camino a la concentración en las relaciones. Se dedica a la meditación y la contemplación. Ilumina viejos pensamientos. Sumergite en tus recuerdos y pensá en lo que has manejado mejor y peor hasta ahora. Meditá. Es momento de enfrentarnos a nosotros mismxs para poder traer luz.",
+    "wheel": "X. La Rueda de la Fortuna (La Roue de Fortune)",
+    "wheel-content": "Esta carta trae cambios drásticos. Oportunidades que se presentan. Tal como vemos en la carta, el futuro está subiendo. También, muestra cómo nuestro ciclo de vida es inestable. La felicidad es, en este caso, sólo una cuestión de pura coincidencia. ¡Cuidado! La Suerte aleatoria suele ser muy inestable.",
+    "strength": "XI. La Fuerza (La Force)",
+    "strength-content": "Si tuviera que definir lo que es esta carta, elijo la palabra CORAJE. Esta carta tiene la habilidad de desenterrar sentimientos poderosos de amor, o consolidar relaciones existentes. Representa una mujer fuerte que puede hasta poner un animal salvaje de su lado. Pasión y poder INMENSO. ¡La motivación va a venir como consecuencia de un deseo interno muy grande! La energía de La Fuerza te invita a sanar.",
+    "hanged": "XII. El Colgado (Le Pendu)",
+    "hanged-content": "Esta carta representa sumisión y obediencia, puede tratarse de alguien que merezca un castigo y que tenga que hacerse cargo de las concecuencias de sus actos. Por otro lado, El Colgado significa retrospección y un cambio en la percepción del tiempo y el espacio. Ahora comenzá a mirar todo desde otra perspectiva.",
+    "death": "XIII. La Muerte (La Mort)",
+    "death-content": "Es el arcano sin nombre porque en el Tarot es imposible capturar este simbolismo con palabras. Cada iniciación de proceso interno, viene acompañado de una “muerte” simbólica y, como consecuencia, la resurrección de un nuevo YO. Dejá ir lo que tengas que dejar atrás, da lugar a algo nuevo.",
+    "temperance": "XIV. Templanza (Tempérance)",
+    "temperance-content": "Esta carta representa armonía y reconciliación. Todo está estrechamente conectado, el mundo y nuestras acciones. Esta carta es una buena guía para pensar sobre el equilibrio de nuestras acciones. Su energía refleja una gran adaptación a tu entorno. Hay una sinergia permanente, fluyendo de manera natural.",
+    "devil": "XV. El Diablo (Le Diable)",
+    "devil-content": "El Diablo despierta los instintos e impulsos más salvajes y profundos. A pesar de su apariencia satánica, es una carta que promueve el buen trabajo gracias a la cantidad de energía que proporciona. ¡Cuidado! El Diablo puede indicar una verdadera anarquía que puede apoderarse fácilmente de tu vida.",
+    "tower": "XVI. La Torre (La Maison Dieu)",
+    "tower-content": "Cuando hablamos de La Torre, puede que pensemos que es una carta negativa. Esta carta propone un renacimiento despues del dolor y sufrimiento. No todo lo que se derrumba es una desgracia. Es símbolo de un perfecto trabajo de construcción, pero está en ruinas por la avaricia y orgullo de sus constructores. Prestá atención y aprovechala para purificar tu Ego.",
+    "star": "XVII. La Estrella (L'Étoile)",
+    "star-content": "La liberación del alma. La Estrella es protectora del futuro y símbolo de armonía. Reúne todos los ingredientes cruciales para que el cambio fluya lo más beneficioso posible. Trae esperanza, espiritualidad y su cualidad más hermosa: renovación interna. ¿Quizás es momento? ¿Quizás ya lo venías pensando?",
+    "moon": "XVIII. La Luna (La Lune)",
+    "moon-content": "La luna es el cuerpo astral mas brillante en nuestra oscura galaxia. Simboliza el calor del hogar, la nostalgia y las memorias (y puede que un poco estemos atadxs al pasado). La luna no es una fuente de energía como el sol, solo recibe y refleja rayos que le llegan. Por eso es que principalmente es un simbolo de pasividad. Por otro lado, todo lo que vemos ahora en la superficie, tiene una profundidad mayor. Esta carta es un fuerte indicador de que permitas que tus ojos sean la intuición.",
+    "sun": "XIX. El Sol (Le Soleil)",
+    "sun-content": "El Sol es la inocencia (como cuando eramos niñxs). Este es el pico de la individualidad, la etapa más alta de conjunción entre Espíritu y Alma. Esta gran experiencia interna solo puede compararse con el evento externo más impresionante que nosotrxs hayamos experimentado, el sol. Es una carta de muy buen pronóstico.",
+    "judgement": "XX. El Juicio (Le Jugement)",
+    "judgement-content": "Esta carta puede venir de la mano de un anuncio, un resultado favorable. Tiene un gran peso espiritual. Los planes que venían tardando tiempo en llevarse a cabo, van a rendir sus frutos.",
+    "world": "XXI. El Mundo (Le Monde)",
+    "world-content": "El Mundo es una carta muy especial porque simboliza la perfección de la creación y el éxito. Trae consigo una señal de que la verdadera satisfacción está en camino y de que vas a ser recompensadx. El Mundo es la culminación de esfuerzos intensos y la llegada a la meta deseada. ¡El universo es perfecto y está de tu lado!",
+    "fool": "El Loco (Le Mat)",
+    "fool-content": "El Loco pasa por la vida sin ninguna ambición u objetivo. Su energía representa abandonar la vida cómoda y embarcarse en un viaje hacia lo desconocido. Totalmente libres de deseos (prosperidad, riqueza, u otros). Los verdaderos valores son la experiencia INMEDIATA. Puede ayudarte a deshacerte de viejos patrones de vida o prejuicios. Tratá de mirar al mundo de manera imparcial como El Loco y descubrí detalles nuevos y desapercibidos.",
+    "collection-complete": "COLECCIÓN COMPLETA"
+  },
+  "about-me": {
+    "name": "¡Hola, mi nombre es Chiara!✨",
+    "content-a": "Desde pequeña siempre me gustó expresarme a través del arte. En el momento en que obtuve mi título de Creativa Publicitaria, fue cuando estuve en contacto con el arte en todas sus fases, desde la escultura, pintura, ilustración, cine, etc. Ilustrar fue y es un motor para conectarme conmigo de una manera muy valiosa. Hoy en día trabajo como programadora web, pero una gran parte de mí tiene pasión por la ilustración gracias a mi mamá, que es una artista que admiro mucho.",
+    "content-b": "🔮 Así nació este proyecto, Tarot Impulso. El universo es un gran generador de eventos necesarios para nuestra propia evolución y tratar de exprimir el jugo es clave. Todo esta perfectamente ordenado para que sea lo que tenga que ser. Cada situación/persona que se nos presenta, es un IMPULSO para surfear la vida.",
+    "email": "Si querés escribirme un e-mail podes hacerlo a ✉️ chiara.diaz1991@gmail.com",
+    "special-mention": "Quiero agradecer a Deandra Delgado, una amiga muy especial que además de ser una hermosa persona es una excelente profesional. Ella fue quién realizó el diseño de eta página. Pueden encontrar su trabajo en el link del footer.💜"
+  },
+  "donate": {
+    "love-what-I-do": "Amo programar y para desarrollar ésta web e ilustrar el mazo de cartas invertí un monton de tiempo y energía ⚡👩🏽‍💻",
+    "how-to": "Si te gustó este proyecto podes donar mediante los siguientes links 👇"
+  },
+  "footer": {
+    "developed": "Esta página fue desarrollada por ",
+    "designed": " diseñada por ",
+    "rights": " con 💖. ®️ All rights reserved"
+  }
+}
