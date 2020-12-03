@@ -7,10 +7,11 @@
     },
     "content": {
       "message": "El universo tiene un mensaje único para vos en este momento de tu vida, venga de donde venga debes creerlo y ponerlo en sintonía con tu realidad, tomar acción para impulsarte y avanzar hacia ese punto en donde queres estar mañana.",
-      "glad": "Me alegro que estés acá",
+      "glad": "Me alegro que estés acá.",
       "randomness": "¿Querés poner a prueba el azar?",
       "throw": "Tirar cartas",
-      "throw-another": "Tirá otra"
+      "throw-another": "Tirá otra",
+      "choose": "ELEGÍ TU CARTA DEL DÍA"
     }
   },
   "cards": {
@@ -70,7 +71,7 @@
     "special-mention": "Quiero agradecer a Deandra Delgado, una amiga muy especial que además de ser una hermosa persona es una excelente profesional. Ella fue quién realizó el diseño de eta página. Pueden encontrar su trabajo en el link del footer.💜"
   },
   "donate": {
-    "love-what-I-do": "Amo programar y para desarrollar ésta web e ilustrar el mazo de cartas invertí un monton de tiempo y energía",
+    "love-what-I-do": "Amo programar y para desarrollar ésta web e ilustrar el mazo de cartas invertí un monton de tiempo y energía.",
     "how-to": "Si te gustó este proyecto podes donar mediante los siguientes links 👇"
   },
   "footer": {

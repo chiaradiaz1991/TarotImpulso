@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import CloseMenu from "../../assets/Union.svg";
 import OpenMenu from "../../assets/menu.svg";
+import { withNamespaces } from "react-i18next";
+import i18n from "../../i18n";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ t }) => {
   const [open, setOpen] = useState(false);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   const handleMenu = () => {
     setOpen(!open);
@@ -13,7 +18,7 @@ const BurgerMenu = () => {
     <div className="burgerMainContainer">
       <div className="iconBurgerMenu" onClick={() => handleMenu()}>
         {open ? (
-          <img src={CloseMenu} alt="image" />
+          <img src={CloseMenu} alt="close-img" />
         ) : (
           <img src={OpenMenu} alt="imageOpen" />
         )}
@@ -30,7 +35,7 @@ const BurgerMenu = () => {
             activeClassName="activeLinkBurger"
             onClick={() => handleMenu()}
           >
-            Cartas
+            {t("home-page.nav-link.cards")}
           </NavLink>
         </li>
         <li className="linksBurgerMenu">
@@ -40,7 +45,7 @@ const BurgerMenu = () => {
             activeClassName="activeLinkBurger"
             onClick={() => handleMenu()}
           >
-            Sobre Mí
+            {t("home-page.nav-link.about-me")}
           </NavLink>
         </li>
         <li className="linksBurgerMenu">
@@ -50,12 +55,29 @@ const BurgerMenu = () => {
             activeClassName="activeLinkBurger"
             onClick={() => handleMenu()}
           >
-            Donar
+            {t("home-page.nav-link.donate")}
           </NavLink>
+        </li>
+        <li className="linksBurgerMenu">
+          <div className="localizationInnerContainer">
+            <button
+              className="localizationButton"
+              onClick={() => changeLanguage("es")}
+            >
+              ES
+            </button>
+            <span className="localizationDiv">/</span>
+            <button
+              className="localizationButton"
+              onClick={() => changeLanguage("en")}
+            >
+              EN
+            </button>
+          </div>
         </li>
       </ul>
     </div>
   );
 };
 
-export default BurgerMenu;
+export default withNamespaces()(BurgerMenu);

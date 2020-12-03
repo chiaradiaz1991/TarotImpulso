@@ -51,6 +51,24 @@
         line-height: 26px;
         margin-bottom: 10px;
       }
+      .localizationInnerContainer {
+        margin-bottom: 10px;
+        .localizationButton {
+          background-color: transparent;
+          border-style: none;
+          color: $grey-dark;
+          line-height: 26px;
+          font-family: $text-font;
+          font-size: 18px;
+          &:hover {
+            color: $purple;
+            outline: none;
+          }
+        }
+        .localizationDiv {
+          color: $grey-dark;
+        }
+      }
     }
   }
 
@@ -89,6 +107,21 @@
         font-weight: bold;
         line-height: 26px;
         margin-bottom: 10px;
+      }
+      .localizationInnerContainer {
+        margin-left: 0px;
+        .localizationButton {
+          background-color: transparent;
+          border-style: none;
+          color: $purple;
+          line-height: 26px;
+          font-family: $text-font;
+          font-size: 18px;
+          outline: none;
+        }
+        .localizationDiv {
+          color: $grey-dark;
+        }
       }
     }
   }
@@ -147,6 +180,21 @@
           line-height: 26px;
           margin-bottom: 10px;
         }
+        .localizationInnerContainer {
+          margin-bottom: 10px;
+          .localizationButton {
+            background-color: transparent;
+            border-style: none;
+            color: $purple;
+            line-height: 26px;
+            font-family: $text-font;
+            font-size: 18px;
+            outline: none;
+          }
+          .localizationDiv {
+            color: $purple;
+          }
+        }
       }
     }
   
@@ -185,6 +233,24 @@
           font-weight: bold;
           line-height: 26px;
           margin-bottom: 10px;
+        }
+        .localizationInnerContainer {
+          margin-bottom: 10px;
+          .localizationButton {
+            background-color: transparent;
+            border-style: none;
+            color: $grey-dark;
+            line-height: 26px;
+            font-family: $text-font;
+            font-size: 18px;
+            &:hover {
+              color: $purple;
+              outline: none;
+            }
+          }
+          .localizationDiv {
+            color: $grey-dark;
+          }
         }
       }
     }

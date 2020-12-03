@@ -21,7 +21,7 @@ const AllCollection = ({ t }) => {
               src={elem.src}
               key={index}
               id={elem.id}
-              alt="image-card"
+              alt="image-card-tarot"
               className={`imageAllCollection ${elem.romanNumber}`}
             />
           );

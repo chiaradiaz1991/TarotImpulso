@@ -102,176 +102,176 @@ const Shuffle = ({ t }) => {
       case image1:
         data.map((item, i) => {
           if (item.id === 1) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image2:
         data.map((item, i) => {
           if (item.id === 2) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image3:
         data.map((item, i) => {
           if (item.id === 3) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image4:
         data.map((item, i) => {
           if (item.id === 4) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image5:
         data.map((item, i) => {
           if (item.id === 5) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image6:
         data.map((item, i) => {
           if (item.id === 6) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image7:
         data.map((item, i) => {
           if (item.id === 7) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image8:
         data.map((item, i) => {
           if (item.id === 8) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image9:
         data.map((item, i) => {
           if (item.id === 9) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image10:
         data.map((item, i) => {
           if (item.id === 10) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image11:
         data.map((item, i) => {
           if (item.id === 11) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image12:
         data.map((item, i) => {
           if (item.id === 12) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(t(item.description));
+            contentCard.title = item.title;
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image13:
-        data.map(({id, title, description}) => {
-          if (id === 13) {
-            contentCard.title = t(title);
-            contentCard.description = t(description);
+        data.map((item, i) => {
+          if (item.id === 13) {
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image14:
         data.map((item, i) => {
           if (item.id === 14) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image15:
         data.map((item, i) => {
           if (item.id === 15) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image16:
         data.map((item, i) => {
           if (item.id === 16) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image17:
         data.map((item, i) => {
           if (item.id === 17) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image18:
         data.map((item, i) => {
           if (item.id === 18) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image19:
         data.map((item, i) => {
           if (item.id === 19) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image20:
         data.map((item, i) => {
           if (item.id === 20) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image21:
         data.map((item, i) => {
           if (item.id === 21) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
       case image22:
         data.map((item, i) => {
           if (item.id === 22) {
-            contentCard.title = t(item.title);
-            contentCard.description = t(item.description);
+            contentCard.title = item.title;
+            contentCard.description = item.description;
           }
         });
         break;
@@ -290,7 +290,7 @@ const Shuffle = ({ t }) => {
     <div className="mainContainerShuffle" role="main">
       <div className="containerTitleShuffle">
         {active == false && (
-          <h1 className="pickACard">Elegí tu carta del día</h1>
+          <h1 className="pickACard">{t("home-page.content.choose")}</h1>
         )}
       </div>
       <div className="cardsContainerShuffle">

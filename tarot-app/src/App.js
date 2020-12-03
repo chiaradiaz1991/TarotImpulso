@@ -16,7 +16,7 @@ import {
 import logo from "../src/assets/Logo.svg";
 import AllCollection from "./pages/AllCollection/AllCollection";
 import { withNamespaces } from "react-i18next";
-import i18n from './i18n';
+import i18n from "./i18n";
 
 const App = ({ t }) => {
   const changeLanguage = (lng) => {
@@ -24,10 +24,6 @@ const App = ({ t }) => {
   };
   return (
     <>
-      <div>
-        <button onClick={() => changeLanguage("es")}>es</button>
-        <button onClick={() => changeLanguage("en")}>en</button>
-      </div>
       <div className="mainContainerApp">
         <div className="mainContainerAppNavLinks">
           <Router>
@@ -70,6 +66,23 @@ const App = ({ t }) => {
                           {t("home-page.nav-link.donate")}
                         </NavLink>
                       </li>
+                      <li className="links">
+                        <div className="localizationInnerContainer">
+                          <button
+                            className="localizationButton"
+                            onClick={() => changeLanguage("es")}
+                          >
+                            ES
+                          </button>
+                          <span className="localizationDiv">/</span>
+                          <button
+                            className="localizationButton"
+                            onClick={() => changeLanguage("en")}
+                          >
+                            EN
+                          </button>
+                        </div>
+                      </li>
                     </div>
                   </ul>
                 </div>
@@ -111,47 +124,55 @@ const App = ({ t }) => {
         </div>
         <div className="footer">
           <p className="footerUs">
-          {t("footer.developed")}{'\u00A0'}
+            {t("footer.developed")}
+            {"\u00A0"}
             <a
               href="https://chiaradiaz.com"
               target="_blank"
               className="footerUsA"
+              rel="noopener noreferrer"
             >
               Chiara Diaz&nbsp;
             </a>
-            {t("footer.designed")} {'\u00A0'}
+            {t("footer.designed")} {"\u00A0"}
             <a
               href="https://www.behance.net/DeandraDelgado"
               target="_blank"
               className="footerUsA"
+              rel="noopener noreferrer"
             >
-              Deandra Delgado
+              Deandra Delgado&nbsp;
             </a>
-            {t("footer.rights")} {'\u00A0'}
+            {t("footer.rights")} {"\u00A0"}
           </p>
         </div>
         <div className="footerMobile">
           <p className="footerUsMobile">
-          {t("footer.developed")} {'\u00A0'}
+            {t("footer.developed")} {"\u00A0"}
             <a
               href="https://chiaradiaz.com"
               target="_blank"
               className="footerUsAMobile"
+              rel="noopener noreferrer"
             >
               Chiara Diaz&nbsp;
             </a>
           </p>
           <p className="footerUsMobile">
-          {t("footer.designed")} {'\u00A0'}
+            {t("footer.designed")} {"\u00A0"}
             <a
               href="https://www.behance.net/DeandraDelgado"
               target="_blank"
               className="footerUsAMobile"
+              rel="noopener noreferrer"
             >
-              Deandra Delgado
+              Deandra Delgado&nbsp;
             </a>
           </p>
-          <p className="footerUsMobile">{t("footer.rights")}{'\u00A0'}</p>
+          <p className="footerUsMobile">
+            {t("footer.rights")}
+            {"\u00A0"}
+          </p>
         </div>
       </div>
     </>

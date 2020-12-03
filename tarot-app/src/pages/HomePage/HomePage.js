@@ -20,7 +20,7 @@ const HomePage = ({ t }) => {
             <p className="textDescriptionB">{t("home-page.content.glad")}</p>
             <p className="textDescriptionB">{t("home-page.content.randomness")}</p>
           </div>
-          <img src={imageBall} atl="" />
+          <img src={imageBall} atl="image-ball" />
         </div>
         <div className="buttonMainContainer">
           <div className="buttonContainer">
