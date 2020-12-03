@@ -2,7 +2,7 @@ import React from "react";
 import card from "../../data";
 import Button from "../../Components/Button/Button";
 import ScrollTopUp from "../../Components/ScrollTopUp/ScrollTopUp";
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as Route, Link } from "react-router-dom";
 import { withNamespaces } from "react-i18next";
 
 const AllDetailCards = ({ t }) => {
@@ -18,7 +18,7 @@ const AllDetailCards = ({ t }) => {
       </div>
       <div className="viewAllCollectionTextContainer">
         <Link to="/all-collection" className="viewAllCollectionText">
-        {t("cards.all-collection")}
+          {t("cards.all-collection")}
         </Link>
       </div>
       <div className="allCardsContainer">

@@ -341,7 +341,7 @@ const Shuffle = ({ t }) => {
           className={active ? "buttonActive" : "buttonInactive"}
           onClick={() => handleSuffle()}
         >
-          Tirá otra
+          {t("home-page.content.throw-another")}
         </button>
       </div>
     </div>

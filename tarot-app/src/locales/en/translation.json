@@ -9,7 +9,8 @@
       "message": "The Universe has a unique message for you in this moment of your life, wherever it comes from you should believe it, take action to push yourself and move forward towards where you want to be tomorrow.",
       "glad": "I am glad you are here",
       "randomness": "Do you want to give it a try?",
-      "throw": "Draw a card"
+      "throw": "Draw a card",
+      "throw-another": "Draw another"
     }
   },
   "cards": {
@@ -69,7 +70,7 @@
     "special-mention": "I want to thank Deandra Delgado, a very special friend, who is not only an beautiful person but algo an excellent professional. She designed this website. If you want to see more of her work, please go to the link in the footer.💜"
   },
   "donate": {
-    "love-what-I-do": "To develop this website and illustrate the cards deck, I invested a lot of time and energy ⚡👩🏽‍💻",
+    "love-what-I-do": "To develop this website and illustrate the cards deck, I invested a lot of time and energy",
     "how-to": "If you liked this project, you can show your appreciation in these links 👇"
   },
   "footer": {
