@@ -23,15 +23,12 @@ const AllDetailCards = ({ t }) => {
       </div>
       <div className="allCardsContainer">
         {card.map(({ id, src, title, description }) => {
-          console.log('data title ', title )
         return (
           <div className={id % 2 === 0 ? "par" : "impar"}>
             <img key={id} src={src} id={id} className="imageCards" alt="" />
             <div className="textContainer">
-              {/* <h2>{t("cards.magician")}</h2> */}
-              {/* <h2>{t(`cards.${title}`)}</h2> */}
-              <p className="cardTitleName">{title}</p>
-              <p className="cardDescription">{description}</p>
+              <p className="cardTitleName">{t(title)}</p>
+              <p className="cardDescription">{t(description)}</p>
             </div>
           </div>
         )})}

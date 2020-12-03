@@ -24,6 +24,8 @@ import image22 from "../../assets/image13.png";
 import backImage from "../../assets/back.png";
 import Card from "../../Components/Card/Card";
 import data from "../../data";
+import { withNamespaces } from "react-i18next";
+
 
 const IMAGES = [
   image1,
@@ -49,7 +51,7 @@ const IMAGES = [
   image22,
 ];
 
-const Shuffle = () => {
+const Shuffle = ({ t }) => {
   const [cards, setCards] = useState(IMAGES);
   const [active, setActive] = useState(false);
   const [card, setCard] = useState();
@@ -85,6 +87,7 @@ const Shuffle = () => {
         text = description(selectedCard);
         break;
     }
+    console.log({text})
     setDescriptionCard(text);
     setCard(selectedCard);
     setActive(true);
@@ -92,183 +95,183 @@ const Shuffle = () => {
 
   const description = (card) => {
     let contentCard = {
-      title: "",
-      description: "",
+      title: t(""),
+      description: t(""),
     };
     switch (card) {
       case image1:
         data.map((item, i) => {
           if (item.id === 1) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image2:
         data.map((item, i) => {
           if (item.id === 2) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image3:
         data.map((item, i) => {
           if (item.id === 3) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image4:
         data.map((item, i) => {
           if (item.id === 4) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image5:
         data.map((item, i) => {
           if (item.id === 5) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image6:
         data.map((item, i) => {
           if (item.id === 6) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image7:
         data.map((item, i) => {
           if (item.id === 7) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image8:
         data.map((item, i) => {
           if (item.id === 8) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image9:
         data.map((item, i) => {
           if (item.id === 9) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image10:
         data.map((item, i) => {
           if (item.id === 10) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image11:
         data.map((item, i) => {
           if (item.id === 11) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image12:
         data.map((item, i) => {
           if (item.id === 12) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(t(item.description));
           }
         });
         break;
       case image13:
-        data.map((item, i) => {
-          if (item.id === 13) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+        data.map(({id, title, description}) => {
+          if (id === 13) {
+            contentCard.title = t(title);
+            contentCard.description = t(description);
           }
         });
         break;
       case image14:
         data.map((item, i) => {
           if (item.id === 14) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image15:
         data.map((item, i) => {
           if (item.id === 15) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image16:
         data.map((item, i) => {
           if (item.id === 16) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image17:
         data.map((item, i) => {
           if (item.id === 17) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image18:
         data.map((item, i) => {
           if (item.id === 18) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image19:
         data.map((item, i) => {
           if (item.id === 19) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image20:
         data.map((item, i) => {
           if (item.id === 20) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image21:
         data.map((item, i) => {
           if (item.id === 21) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
       case image22:
         data.map((item, i) => {
           if (item.id === 22) {
-            contentCard.title = item.title;
-            contentCard.description = item.description;
+            contentCard.title = t(item.title);
+            contentCard.description = t(item.description);
           }
         });
         break;
@@ -345,4 +348,5 @@ const Shuffle = () => {
   );
 };
 
-export default Shuffle;
+export default withNamespaces()(Shuffle);
+
